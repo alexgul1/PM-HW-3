@@ -1,0 +1,117 @@
+
+body {
+    font-family: Roboto, serif;
+    min-width: 320px;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.block_arrows {
+    background-color: #fff;
+    padding-left: 20px;
+}
+
+.arrow-btn .arrow {
+    cursor: pointer;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: #e1e3ea 2px solid;
+    border-radius: 50%;
+}
+
+.arrow-btn .arrow:hover {
+    border-color: #ff5816;
+}
+
+.arrow.prev {
+    margin-right: 8px;
+    background: url("images/orange-arrow-prev.png") center center no-repeat;
+}
+
+.arrow.next {
+    background: url("images/orange-arrow-next.png") center center no-repeat;
+}
+
+
+.arrow-more-info > img {
+    vertical-align: text-top;
+}
+
+.brand-block {
+    display: none;
+}
+
+.block_arrows__link {
+    display: none;
+}
+
+@media screen and (min-width: 750px){
+    .brand-block {
+        display: block;
+        padding: 0 15px;
+        margin-top: 40px;
+    }
+
+    .brand-block_header {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-between;
+        align-items: center;
+        background: url("images/1px_border.gif") center center repeat-x;
+    }
+
+    .brand-block__title {
+        text-transform: uppercase;
+        font-size: 22px;
+        font-weight: 500;
+        background-color: #fff;
+        padding-right: 20px;
+    }
+
+    .brand-block__title > a {
+        padding-left: 10px;
+    }
+
+    .brand-block_slider {
+        overflow: hidden;
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(5, calc(100% / 5));
+        grid-auto-flow: column;
+        padding: 0 40px;
+    }
+
+    .brand-block_slider__brand {
+        margin: auto;
+    }
+
+    .brand-block_slider img{
+        width: 85%;
+    }
+}
+
+@media screen and (min-width: 980px) {
+    .brand-block_slider {
+        grid-template-columns: repeat(7, calc(100% / 7));
+        padding: 0 20px;
+    }
+}
+
+@media screen and (min-width: 1140px){
+    .brand-block_slider {
+        grid-template-columns: repeat(9, calc(100% / 9));
+        padding: 0;
+    }
+
+    .block_arrows__link {
+        display: inline-block;
+        font-size: 13px;
+        color: #4673ab;
+        text-decoration: underline #4673ab;
+    }
+
+    .arrow-btn {
+        display: none;
+    }
+}
