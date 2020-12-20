@@ -4,6 +4,7 @@ body {
     min-width: 320px;
     max-width: 1140px;
     margin: 0 auto;
+    word-wrap: break-word;
 }
 
 .block_arrows {
@@ -38,7 +39,8 @@ body {
     vertical-align: text-top;
 }
 
-.brand-block {
+.brand-block,
+.right-now-block {
     display: none;
 }
 
@@ -47,6 +49,69 @@ body {
 }
 
 @media screen and (min-width: 750px){
+
+    .right-now-block {
+        display: block;
+        padding: 0 15px;
+        margin-top: 40px;
+    }
+    .right-now_header{
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: space-between;
+        align-items: center;
+        background: url("images/1px_border.gif") center center repeat-x;
+    }
+
+    .right-now__title {
+        text-transform: uppercase;
+        font-size: 22px;
+        font-weight: 500;
+        background-color: #fff;
+        padding-right: 20px;
+    }
+
+    .right-now__title > a {
+        padding-left: 10px;
+    }
+
+    .right-now_slider {
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: repeat(3, calc(100% / 3));
+        grid-auto-flow: column;
+        margin: 40px 30px 0;
+    }
+
+    .right-now_slider__product {
+        display: grid;
+        grid-template-rows: 80% 20%;
+        grid-auto-flow: row;
+        grid-row-gap: 15px;
+        margin-right: 3%;
+    }
+
+    .right-now_product__img {
+        text-align: center;
+    }
+
+    .right-now_product__img > img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .right-now-product__link {
+        font-size: 16px;
+        font-weight: 400;
+        color: #4673ab;
+        text-decoration: underline #4673ab;
+    }
+
+    .right-now-product__link:hover {
+        color: #ff5816;
+        text-decoration: underline #ff5816;
+    }
+
     .brand-block {
         display: block;
         padding: 0 15px;
@@ -92,6 +157,11 @@ body {
 }
 
 @media screen and (min-width: 980px) {
+
+    .right-now_slider {
+        grid-template-columns: repeat(4, calc(100% / 4));
+    }
+
     .brand-block_slider {
         grid-template-columns: repeat(7, calc(100% / 7));
         padding: 0 20px;
@@ -99,6 +169,10 @@ body {
 }
 
 @media screen and (min-width: 1140px){
+    .right-now_slider {
+        padding: 0;
+    }
+
     .brand-block_slider {
         grid-template-columns: repeat(9, calc(100% / 9));
         padding: 0;
