@@ -37,8 +37,15 @@ body {
     background: url("images/orange-arrow-next.png") center center no-repeat;
 }
 
-.arrow-more-info > img {
-    vertical-align: text-top;
+.arrow-more-info {
+    margin-left: 15px;
+    padding-left: 10px;
+    width: 9px;
+    background: url("images/blue-right-arrow.png") no-repeat center center;
+}
+
+.arrow-more-info:hover {
+    background-image: url("images/orange-arrow.png");
 }
 
 .how-to-work-block {
@@ -128,6 +135,7 @@ body {
     margin-right: auto;
 }
 
+.news-ad-block,
 .brand-block,
 .right-now-block,
 .our-strengths-block,
@@ -232,10 +240,6 @@ body {
         font-weight: 500;
         background-color: #fff;
         padding-right: 20px;
-    }
-
-    .brand-block__title > a {
-        padding-left: 10px;
     }
 
     .brand-block_slider {
@@ -536,8 +540,144 @@ body {
         text-decoration: none;
     }
 
-    .about-us__text  .hidden {
+    .about-us__text .hidden {
         display: none;
+    }
+
+    .news-ad-block {
+        padding: 0 15px;
+        display: grid;
+        grid-template-columns: 230px 1fr;
+        grid-column-gap: 20px;
+        margin-top: 50px;
+    }
+
+    .advertising__slogan {
+        padding: 10px;
+        font-size: 9px;
+        font-style: italic;
+        font-weight: 300;
+        text-transform: uppercase;
+        text-align: center;
+        background-color: #e3e5eb;
+        border-radius: 5px;
+        margin-bottom: 30px;
+    }
+
+    .advertising__slogan a {
+        color: #4673ab;
+    }
+
+    .banners-section {
+        position: relative;
+    }
+
+    .banners-section .banner {
+        background: url("images/banner.png") no-repeat center;
+        background-size: 100% 100%;
+        height: 370px;
+        color: #fff;
+        border-radius: 5px;
+    }
+
+    .banner_info {
+        padding-top: 50px;
+        margin: auto 0 auto 7%;
+        user-select: none;
+    }
+
+    .banner_info__title {
+        text-transform: uppercase;
+        font-weight: 300;
+        margin-bottom: 40px;
+    }
+
+    .banner_info__title .slogan {
+        font-size: 20px;
+        font-weight: 500;
+        color: #ff5816;
+        margin-bottom: 20px;
+    }
+
+    .banner_info__title .text {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    .banner_info__title em {
+        font-size: 11px;
+    }
+
+    .banner_info .benefits {
+        margin-bottom: 50px;
+    }
+
+    .banner_info .benefits li {
+        margin-bottom: 18px;
+        list-style: disc inside;
+        font-size: 10px;
+        font-weight: 300;
+    }
+
+    .banner_info .more-info-btn {
+        margin-top: 40px;
+        padding: 14px 34px;
+        font-size: 15px;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: #4673ab;
+        background-color: #ffffff;
+        border-bottom: #c4c4c4 2px solid;
+        border-radius: 5px;
+    }
+
+    .banner_info .more-info-btn:hover {
+        background-color: #ececec;
+    }
+
+    .banners-section .prev-arrow,
+    .banners-section .next-arrow {
+        cursor: pointer;
+        position: absolute;
+        z-index: 2;
+        top: 40%;
+        height: 44px;
+        width: 16px;
+    }
+
+    .banners-section .prev-arrow {
+        background: url("images/arrow-prev-banner.png") no-repeat center;
+        left: 3%;
+    }
+
+    .banners-section .next-arrow {
+        background: url("images/arrow-next-banner.png") no-repeat center;
+        right: 3%;
+    }
+
+    .banner_dots {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        z-index: 2;
+    }
+
+    .banner_dots li {
+        cursor: pointer;
+        margin-right: 1px;
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        background: #ffffff;
+        border-radius: 5px;
+    }
+
+    .banner_dots li.active {
+        background: #ff5816;
+    }
+
+    .banner_info .benefits li {
+        font-size: 11px;
     }
 
 }
@@ -591,6 +731,32 @@ body {
         display: block;
         margin-top: 30px;
     }
+
+    .news-ad-block {
+        grid-template-columns: 250px 1fr;
+    }
+
+    .advertising__slogan {
+        font-size: 13px;
+    }
+
+    .banner_info__title .slogan {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+
+    .banner_info__title .text {
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+
+    .banner_info__title em {
+        font-size: 17px;
+    }
+
+    .banner_info .benefits li {
+        font-size: 13px;
+    }
 }
 
 @media screen and (min-width: 1140px) {
@@ -616,5 +782,23 @@ body {
 
     .how-to-work_instructions {
         padding: 0;
+    }
+
+    .advertising__slogan {
+        font-size: 16px;
+    }
+
+    .banner_info__title .slogan {
+        font-size: 31px;
+        margin-bottom: 10px;
+    }
+
+    .banner_info__title .text {
+        font-size: 29px;
+        margin-bottom: 10px;
+    }
+
+    .banner_info__title em {
+        font-size: 18px;
     }
 }
