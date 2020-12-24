@@ -4,6 +4,10 @@ body {
     word-wrap: break-word;
 }
 
+a {
+    color: #000000;
+}
+
 .container {
     min-width: 320px;
     max-width: 1140px;
@@ -46,6 +50,150 @@ body {
 
 .arrow-more-info:hover {
     background-image: url("images/orange-arrow.png");
+}
+
+.header_main {
+    margin-top: 15px;
+    padding: 0 15px;
+}
+
+.region-auth-block {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+#region-select__city {
+    appearance: none;
+    cursor: pointer;
+    text-decoration: underline #4673ab dotted;
+    color: #4673ab;
+    overflow: hidden;
+}
+
+.auth .auth-link {
+    color: #4673ab;
+    text-decoration: underline #4673ab solid;
+}
+
+.auth .auth-link:hover {
+    color: #ff5816;
+    text-decoration: underline #ff5816 solid;
+}
+
+.auth-link.login {
+    display: none;
+}
+
+.header_main__info {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: auto 40px 40px;
+    grid-template-areas:
+            "logo search basket"
+            "contacts contacts contacts";
+}
+
+.header__logo {
+    grid-area: logo;
+    font-size: 32px;
+    font-weight: 300;
+}
+
+.header__logo .logo__name:hover {
+    color: #ff5816;
+}
+
+.header__logo .logo__slogan {
+    display: none;
+}
+
+.header__logo .bg {
+    display: inline-block;
+    margin: 0 3px;
+    padding: 0 5px;
+    font-weight: 500;
+    color: #ff5816;
+    background: url("images/grey-bg.png") no-repeat center;
+    background-size: cover;
+    border-radius: 10px;
+
+}
+
+.header__search {
+    grid-area: search;
+    justify-self: center;
+}
+
+.header__search .search-box {
+    display: none;
+}
+
+.header__basket {
+    grid-area: basket;
+    justify-self: end;
+    position: relative;
+}
+
+.basket__info {
+    display: none;
+}
+
+.basket-fav-match {
+    display: none;
+}
+
+.basket-goods-counter {
+    position: absolute;
+    top: -10px;
+    right: -6px;
+    padding: 2px 5px;
+    color: #ff5816;
+    font-size: 10px;
+    font-weight: 300;
+    text-align: center;
+    background: url("images/grey-bg.png") no-repeat center;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.header__contacts {
+    margin-top: 20px;
+    grid-area: contacts;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    line-height: 20px;
+}
+
+.header__contacts .numbers {
+    justify-self: start;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.header__contacts .back-call {
+    display: none;
+}
+
+.header__contacts .schedule {
+    display: none;
+}
+
+.numbers .social {
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.header__contacts .email-skype {
+    justify-self: end;
+    text-align: right;
+}
+
+.header__contacts .email-skype a {
+    color: #4673ab;
+    text-decoration: underline #4673ab;
 }
 
 .how-to-work-block {
@@ -159,6 +307,110 @@ body {
 }
 
 @media screen and (min-width: 750px) {
+
+    .auth-link.login {
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    .header_main__info {
+        /*
+        justify-content: space-between;
+        */
+        grid-template-columns: 1fr 1fr 40px 200px;
+        grid-template-areas:
+                "logo contacts search basket";
+        align-items: center;
+
+    }
+
+    .header__logo {
+        font-size: 46px;
+    }
+
+    .header__logo .logo__slogan {
+        margin-top: 5px;
+        display: block;
+        font-size: 10px;
+        text-transform: uppercase;
+        color: #818588;
+        padding-left: 5px;
+    }
+
+    .header__search {
+        margin-right: 20px;
+    }
+
+
+
+    .header__basket {
+        width: 100%;
+        height: 50px;
+        background: url("images/grey-bg.png") no-repeat center;
+        background-size: cover;
+        border-radius: 5px;
+    }
+
+    .basket a:hover {
+        color: #ff5816;
+    }
+
+    .basket {
+        padding: 10px 20px;
+    }
+
+    .basket-goods-counter {
+        display: none;
+    }
+
+
+    .basket__info {
+        display: inline-block;
+        font-size: 13px;
+        margin-left: 5px;
+        line-height: 15px;
+    }
+
+    .basket-fav-match {
+        margin-top: 10px;
+        width: 100%;
+        display: block;
+        font-size: 11px;
+        font-weight: 300;
+    }
+
+    .basket-fav-match > a {
+        margin-right: 10px;
+        border-bottom: #4673ab 1px solid;
+        padding-bottom: 5px;
+    }
+
+    .basket-fav-match img {
+        vertical-align: middle;
+    }
+
+    .header__contacts {
+        margin-top: -30px;
+        display: block;
+        text-align: right;
+        justify-self: baseline;
+    }
+
+    .header__contacts .numbers {
+        font-size: 22px;
+    }
+
+    .header__contacts .numbers .schedule {
+        font-size: 13px;
+    }
+
+    .header__contacts .email-skype {
+        font-size: 13px;
+    }
+
+    .header__contacts .schedule {
+        display: block;
+    }
 
     .right-now-block {
         display: block;
@@ -683,6 +935,39 @@ body {
 }
 
 @media screen and (min-width: 980px) {
+    .header__contacts {
+        position: relative;
+        text-align: left;
+        justify-self: center;
+    }
+
+    .header__contacts .email-skype {
+        text-align: left;
+    }
+
+    .header__contacts .back-call {
+        padding-top: 10px;
+        padding-right: 10px;
+        display: block;
+        position: absolute;
+        top: 5px;
+        left: -130px;
+        width: 112px;
+        height: 57px;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 13px;
+        font-weight: 400;
+        background: url("images/back-call-bg.png") no-repeat center;
+    }
+
+    .header__contacts .back-call a {
+        text-decoration: dotted;
+    }
+
+    .header__contacts .back-call a:hover {
+        text-decoration-style: solid;
+    }
 
     .right-now_slider {
         grid-template-columns: repeat(4, calc(100% / 4));
@@ -760,6 +1045,81 @@ body {
 }
 
 @media screen and (min-width: 1140px) {
+
+    .header_main__info {
+        /*
+        justify-content: space-between;
+        */
+        grid-template-columns: 1fr 1fr 1fr 200px;
+        grid-template-areas:
+                "logo contacts search basket";
+        align-items: center;
+
+    }
+
+    .header__search {
+        margin-right: 35px;
+    }
+
+    .header__search .search-icon {
+        display: none;
+    }
+
+    .header__search .search-box {
+        display: block;
+    }
+
+    .search-box_title {
+        font-size: 18px;
+        font-style: italic;
+        font-weight: 300;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        background: url("images/ruble-icon.png") no-repeat left center;
+        padding-left: 30px;
+    }
+
+    .search-box_title .orange {
+        color: #ff5816;
+        font-weight: 400;
+    }
+
+    .search-box form {
+        background-color: #eff0f4;
+        border-radius: 5px;
+    }
+
+    .search-box .search-input {
+        padding: 10px 0 10px 15px;
+        background-color: #eff0f4;
+        font-size: 13px;
+        width: 200px;
+        border-radius: 5px;
+        margin-right: -3px;
+    }
+
+    .search-box .search-button {
+        padding: 8px;
+        color: #ffffff;
+        font-size: 13px;
+        border-radius: 5px;
+        background-color: #ff5816;
+    }
+
+    .search-box .search-button:hover {
+        background-color: #4673ab;
+        border-bottom: #284263 2px solid;
+    }
+
+    .header__contacts {
+        margin-top: -5px;
+        margin-left: 45px;
+    }
+
+    .header__contacts .skype-info {
+        display: none;
+    }
+
     .right-now_slider {
         padding: 0;
     }
