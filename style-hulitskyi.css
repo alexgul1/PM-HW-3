@@ -41,14 +41,14 @@ body {
     background: url("images/orange-arrow-next.png") center center no-repeat;
 }
 
-.arrow-more-info {
+.brand-block__title .arrow-more-info {
     margin-left: 15px;
     padding-left: 10px;
     width: 9px;
     background: url("images/blue-right-arrow.png") no-repeat center center;
 }
 
-.arrow-more-info:hover {
+.brand-block__title .arrow-more-info:hover {
     background-image: url("images/orange-arrow.png");
 }
 
@@ -319,7 +319,7 @@ body {
     font-weight: 300;
     padding: 15px 10px;
     border-bottom: 1px solid #ffffff;
-    position:relative;
+    position: relative;
     opacity: .8;
 }
 
@@ -427,6 +427,7 @@ body {
 .widget {
     background-color: #2c3f53;
 }
+
 .footer-note-widget {
     padding: 20px 15px;
     display: grid;
@@ -1220,7 +1221,7 @@ body {
         display: none;
     }
 
-    .footer-note-widget  {
+    .footer-note-widget {
         grid-template-columns: auto auto;
         grid-column-gap: 10%;
     }
@@ -1373,7 +1374,7 @@ body {
         grid-template-columns: 265px 100px;
     }
 
-    .footer-note-widget  {
+    .footer-note-widget {
         grid-column-gap: 25%;
     }
 }
