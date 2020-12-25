@@ -5,6 +5,10 @@ body {
     word-wrap: break-word;
 }
 
+:root {
+    --orange: #ff5816;
+}
+
 .container {
     min-width: 320px;
     max-width: 1140px;
@@ -26,7 +30,7 @@ body {
 }
 
 .arrow-btn .arrow:hover {
-    border-color: #ff5816;
+    border-color: var(--orange);
 }
 
 .arrow.prev {
@@ -66,7 +70,7 @@ body {
         position: relative;
         width: 32px;
         height: 15px;
-        background: linear-gradient(to bottom,#ff5816 0,#ff5816 20%,#040d0d 20%,#040d0d 40%,#ff5816 40%,#ff5816 60%,#040d0d 60%,#040d0d 80%,#ff5816 80%,#ff5816 100%)
+        background: linear-gradient(to bottom,var(--orange) 0,var(--orange) 20%,#040d0d 20%,#040d0d 40%,var(--orange) 40%,var(--orange) 60%,#040d0d 60%,#040d0d 80%,var(--orange) 80%,var(--orange) 100%)
     }
 
     .menu .burger:hover {
@@ -111,7 +115,7 @@ body {
         vertical-align: middle;
         margin-left: 10px;
         content: "\25BC";
-        color: #ff5816;
+        color: var(--orange);
     }
 
     .sub-menu:hover .sub-menu_items {
@@ -130,8 +134,8 @@ body {
     }
     .sub-menu .sub-menu_item:hover {
         background: #cbcdd0;
-        color: #ff5816;
-        text-decoration: underline #ff5816;
+        color: var(--orange);
+        text-decoration: underline var(--orange);
     }
 
 }
@@ -194,8 +198,8 @@ body {
     }
 
     .right-now-product__link:hover {
-        color: #ff5816;
-        text-decoration: underline #ff5816;
+        color: var(--orange);
+        text-decoration: underline var(--orange);
     }
 
     .brand-block {
@@ -420,9 +424,11 @@ body {
 }
 
 @media screen and (min-width: 1140px) {
+    
     .menu .burger {
         display: none;
     }
+    
     .menu {
         padding: 0;
     }
@@ -454,7 +460,7 @@ body {
     .menu .menu-item:hover {
         background: #000000;
         color: #fff;
-        box-shadow: inset 0 -5px #ff5816;
+        box-shadow: inset 0 -5px var(--orange);
     }
 
     .sub-menu {
@@ -472,7 +478,75 @@ body {
         z-index: 2;
     }
 
+    .categories {
+        position: relative;
+        margin-top: 30px;
+        padding: 0 10px;
+        background: var(--orange);
+        grid-template-columns: repeat(10, 1fr);
+        display: grid;
+        color:#fff;
+        border-radius: 8px;
+        overflow: hidden;
+        text-transform: uppercase;
+        font-size: 12px;
+    }
 
+    .category {
+        position: relative;
+        padding: 10px ;
+        border-bottom: #c44411 3px solid;
+        vertical-align: middle;
+    }
+
+    .category:after {
+        position: absolute;
+        right: 0;
+        top: 0;
+        content: "";
+        display: block;
+        width: 1px;
+        height: 100%;
+        background: #ff8f62; }
+
+
+    
+    .category:hover {
+        border-bottom: #ff743d 3px solid;
+        background: #ff743d;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+
+    .category-arrow_left, .category-arrow_right {
+        cursor: pointer;
+        position: absolute;
+        display: inline-block;
+        background-color: #d94206;
+        width: 15px;
+        height: 100%;
+        text-align: center;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .category-arrow_left:hover, .category-arrow_right:hover {
+        background-color: rgba(252, 70, 6, 0.59);
+    }
+
+    .category-arrow_left span, .category-arrow_right span{
+        display: inline-block;
+        margin-top: 100%;
+    }
+
+    .category-arrow_left {
+        left: 0;
+        display: none;
+    }
+
+    .category-arrow_right {
+        right: 0;
+    }
 
     .right-now_slider {
         padding: 0;
