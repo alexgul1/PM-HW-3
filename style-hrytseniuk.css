@@ -55,9 +55,6 @@ body {
 }
 
 @media screen and (min-width: 320px) {
-    .header {
-
-    }
     .menu {
         background: #000;
         padding: 10px 0;
@@ -87,20 +84,56 @@ body {
 
     .menu .menu-item {
         display: none;
-    }
-
-
-    .menu.open .menu-item {
-        display: inline-block;
+        white-space: nowrap;
         width: 100%;
         padding: 20px;
         background: #000;
-        color:#bcc3c5;
+        color: #bcc3c5;
     }
-    .menu.open .menu-item:hover {
+
+    .menu.open .burger {
+        transform: translateX(-100%);
+    }
+    .open .menu-item {
+        display: inline-block;
+
+    }
+    .menu .menu-item:hover {
         background: #555555;
-        /*background: rgba(0, 0, 0, 0.56);*/
     }
+
+    .sub-menu {
+        background: #eff1f4;
+    }
+
+    .sub-menu .menu-item:after {
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 10px;
+        content: "\25BC";
+        color: #ff5816;
+    }
+
+    .sub-menu:hover .sub-menu_items {
+        display: block;
+    }
+
+    .sub-menu .sub-menu_items {
+        display: none;
+    }
+
+    .sub-menu .sub-menu_item {
+        display: block;
+        padding: 10px;
+        color: #040d0d;
+        border-bottom: #d1d7df 2px solid;
+    }
+    .sub-menu .sub-menu_item:hover {
+        background: #cbcdd0;
+        color: #ff5816;
+        text-decoration: underline #ff5816;
+    }
+
 }
 
 @media screen and (min-width: 750px) {
@@ -387,6 +420,60 @@ body {
 }
 
 @media screen and (min-width: 1140px) {
+    .menu .burger {
+        display: none;
+    }
+    .menu {
+        padding: 0;
+    }
+
+    .menu .container {
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+    }
+
+    .menu .menu-item {
+        display: inline-block;
+        font-size: 13px;
+        text-align: center;
+        padding: 15px 20px;
+        position: relative;
+    }
+
+    .menu .menu-item:before {
+        position: absolute;
+        content: '';
+        display: block;
+        width: 0;
+        height: 40%;
+        border-left: #323232 1px dotted;
+        left: 0;
+        transform: translateY(-20%);
+    }
+
+    .menu .menu-item:hover {
+        background: #000000;
+        color: #fff;
+        box-shadow: inset 0 -5px #ff5816;
+    }
+
+    .sub-menu {
+        position: relative;
+    }
+
+    .sub-menu .sub-menu_item {
+        padding: 10px;
+        border: none;
+    }
+
+    .sub-menu_items {
+        background: #fff;
+        position: absolute;
+        z-index: 2;
+    }
+
+
+
     .right-now_slider {
         padding: 0;
     }
