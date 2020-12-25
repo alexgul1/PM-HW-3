@@ -423,6 +423,10 @@ body {
     border-radius: 5px;
 }
 
+
+.widget {
+    background-color: #2c3f53;
+}
 .footer-note-widget {
     padding: 20px 15px;
     display: grid;
@@ -430,7 +434,6 @@ body {
     justify-items: center;
     color: #ffffff;
     font-size: 10px;
-    background-color: #2c3f53;
 }
 
 .footer-note-widget .note {
@@ -951,8 +954,89 @@ body {
         padding: 0 15px;
         display: grid;
         grid-template-columns: 230px 1fr;
-        grid-column-gap: 20px;
+        grid-column-gap: 30px;
         margin-top: 50px;
+    }
+
+    .news-section .news_header {
+        font-size: 21px;
+        font-weight: 400;
+        text-transform: uppercase;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #e3e5eb;
+        margin-bottom: 30px;
+
+    }
+
+    .news-section .all-news-link {
+        color: #4673ab;
+        text-decoration: underline #4673ab;
+    }
+
+    .news-section .all-news-link:hover {
+        color: #ff5816;
+        text-decoration: underline #ff5816;
+    }
+
+    .news-section .news-preview {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-column-gap: 10px;
+        justify-content: space-between;
+        padding-bottom: 20px;
+        border-bottom: 1px dotted #e3e5eb;
+        margin-bottom: 20px;
+    }
+
+
+    .news-section .news-preview:not(nth-first-child) {
+        margin-top: 20px;
+    }
+
+    .news-preview a {
+        color: #000000;
+    }
+
+    .news-preview .news-img {
+        width: 60px;
+        height: 60px;
+        border-radius: 5px;
+    }
+
+    .news-preview .news-date {
+        margin-top: -20px;
+        text-align: center;
+    }
+
+    .news-preview .date-num {
+        display: inline-block;
+        background: #fff;
+        width: 36px;
+        height: 28px;
+        line-height: 28px;
+        color: #ff5816;
+        font-size: 20px;
+        font-weight: 500;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 5px;
+        margin-bottom: -5px;
+    }
+
+    .news-text {
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 15px;
+    }
+
+    .news-text .news-title {
+        color: #4673ab;
+        font-weight: 500;
+    }
+
+    .news-text .news-title:hover {
+        color: #ff5816;
+        text-decoration: #ff5816 underline;
     }
 
     .advertising__slogan {
