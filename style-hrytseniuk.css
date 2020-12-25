@@ -734,6 +734,37 @@ body {
         right: 0;
     }
 
+    .goods .arrow-more-info {
+        display: none;
+    }
+
+    .section-header {
+        background: none;
+    }
+
+    .slider {
+        position: relative;
+    }
+
+    .slider .arrow {
+        position: absolute;
+        top: 50%;
+        background-size: contain;
+        width: 20px;
+        height: 40px;
+    }
+
+    .slider .prev {
+        left: 0;
+        background: url("images/arrow-left.png") center center no-repeat;
+    }
+
+    .slider .next {
+        right: 0;
+        background: url("images/arrow-left.png") center center no-repeat;
+        transform: rotate(180deg);
+    }
+
     .right-now_slider {
         padding: 0;
     }
