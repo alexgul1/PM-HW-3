@@ -204,7 +204,7 @@ body {
         justify-items:center;
     }
 
-    .one-good{
+    .one-good, .one-offer{
         position: relative;
         max-width: 230px;
         border: 1px solid #cdcdcd;
@@ -271,6 +271,10 @@ body {
         cursor: pointer;
     }
 
+    .one-good__image-wrap img {
+        width: 100%;
+    }
+
     .one-good__name{
     font-size: 16px;
     font-weight: 400;
@@ -314,6 +318,24 @@ body {
         font-size: 13px;
         color: #4673ab;
         text-decoration: underline #4673ab;
+    }
+
+    .one-offer {
+        padding: 0;
+        justify-content: center;
+    }
+    
+    .one-offer h4{
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .one-offer p {
+        padding: 10px;
+    }
+
+    .one-offer .one-good__about {
+        text-align: center;
     }
 }
 
