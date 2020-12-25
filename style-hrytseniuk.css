@@ -44,6 +44,7 @@ body {
 
 
 .arrow-more-info > img {
+    padding-left: 20px;
     vertical-align: text-top;
 }
 
@@ -56,6 +57,53 @@ body {
 
 .block_arrows__link {
     display: none;
+}
+
+.section-header {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-items: center;
+    background: url("images/1px_border.gif") center center repeat-x;
+
+}
+
+.section-title {
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 500;
+    background-color: #fff;
+    padding-right: 20px;
+}
+
+
+.btn {
+    display: inline-block;
+    padding: 3px 10px;
+    background: #ff5816;
+    border-radius: 5px;
+    color: #fff;
+    line-height: 100%;
+    border-bottom: #c44817 3px solid;
+}
+
+.btn:hover {
+    border-bottom: #284263 3px solid;
+}
+
+.basket {
+    padding: 10px 16px 10px 40px;
+    background: #ff5816 url(images/ico_cart.svg) no-repeat 15% center;
+    background-size: 20px,17px;
+    border-bottom: #c44817 3px solid;
+    text-transform: uppercase;
+    font-size: 93.3%;
+    font-weight: 500
+}
+
+.basket:hover {
+    background: #4673ab url(images/ico_cart.svg) no-repeat 15% center;
+    background-size: 20px,17px;
 }
 
 @media screen and (min-width: 320px) {
@@ -138,10 +186,144 @@ body {
         text-decoration: underline var(--orange);
     }
 
+    .categories {
+        display: none;
+    }
+
+    .goods {
+        padding: 55px 15px 0;
+    }
+
+    .list-goods {
+        display: grid;
+        grid-auto-columns: 100%;
+        grid-auto-flow: column;
+        padding-top:40px;
+        margin: 0 30px;
+        overflow: hidden;
+        justify-items:center;
+    }
+
+    .one-good{
+        position: relative;
+        max-width: 230px;
+        border: 1px solid #cdcdcd;
+        padding: 5px 15px 10px;
+        border-radius: 10px;
+    }
+
+    .one-good:before {
+        content:'';
+        display: block;
+        position: absolute;
+        left:5px;
+        top:-5px;
+        width: 35px;
+        height: 30px;
+        text-transform: uppercase;
+        color: #fff;
+        padding-top: 10px;
+        text-align: center;
+        border-top-left-radius: 2px;
+        border-top-right-radius: 2px;
+    }
+    .one-good:after {
+        content:'';
+        display: block;
+        position: absolute;
+        left:5px;
+        top:25px;
+        width: 0;
+        height: 0;
+        border-left: 18px solid transparent;
+        border-right: 18px solid transparent;
+    }
+
+    .new-label:before {
+        content:'new';
+        background-color: #42c16c;
+    }
+    .new-label:after {
+        border-top: 10px solid #42c16c;
+    }
+
+    .sale-label:before {
+        content:'%';
+        background-color: #499ad9;
+    }
+
+    .sale-label:after {
+        border-top: 10px solid #499ad9;
+    }
+
+    .top-label:before {
+        background: #f7c159 url(images/ico_thumb.svg) no-repeat center center;
+        background-size: 1.5em,1.5em;
+        color: #f7c159;
+    }
+
+    .top-label:after {
+        border-top: 10px solid #f7c159;
+    }
+
+    .one-good:hover {
+        border: 1px solid var(--orange);
+        cursor: pointer;
+    }
+
+    .one-good__name{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #4673ab;
+    text-decoration: underline #4673ab;
+    padding: 35px 0 25px ;
+}
+    .one-good__name:hover {
+        color: var(--orange);
+        text-decoration: underline var(--orange);
+    }
+
+    .one-good__price-wrap{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    }
+    .one-good__price {
+        font-weight: 300;
+        font-size: 13px;
+    }
+    .one-good__price>span {
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    .one-good__discount {
+        color: var(--orange);
+        text-decoration: line-through;
+    }
+
+    .one-good__actions {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0 15px;
+    }
+
+    .one-good__about {
+        font-size: 13px;
+        color: #4673ab;
+        text-decoration: underline #4673ab;
+    }
 }
 
 @media screen and (min-width: 750px) {
-
+    .list-goods {
+        display: grid;
+        grid-auto-columns:  auto ;
+        grid-template-columns: repeat(3, calc(100% / 3));
+        justify-content: space-between;
+    }
     .right-now-block {
         display: block;
         padding: 0 15px;
@@ -404,6 +586,10 @@ body {
 }
 
 @media screen and (min-width: 980px) {
+    .list-goods {
+        grid-auto-columns:auto ;
+        grid-template-columns: repeat(4, auto);
+    }
 
     .right-now_slider {
         grid-template-columns: repeat(4, calc(100% / 4));
