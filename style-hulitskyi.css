@@ -4,7 +4,7 @@ body {
     word-wrap: break-word;
 }
 
-a {
+.header_main a {
     color: #000000;
 }
 
@@ -283,6 +283,160 @@ a {
     margin-right: auto;
 }
 
+.footer {
+    margin-top: 40px;
+    background-color: #5c7489;
+    padding-bottom: 20px;
+
+}
+
+.footer,
+.footer a {
+    color: #ffffff;
+}
+
+.footer_address {
+    display: none;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+            "menu menu"
+            "logo contacts";
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.footer_menu {
+    grid-area: menu;
+    margin-bottom: 30px;
+}
+
+.footer_menu li {
+    font-size: 13px;
+    font-weight: 300;
+    padding: 15px 10px;
+    border-bottom: 1px solid #ffffff;
+    position:relative;
+    opacity: .8;
+}
+
+.footer_menu li::after {
+    content: url("images/arrow.png");
+    position: absolute;
+    right: 15px;
+    top: 15px
+}
+
+.footer_logo {
+    grid-area: logo;
+    padding-left: 15px;
+    text-transform: uppercase;
+}
+
+.footer_logo .logo__name {
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.footer_logo .logo__slogan {
+    margin-top: 3px;
+    font-size: 7px;
+    opacity: .6;
+}
+
+.footer_logo .bg {
+    display: inline-block;
+    margin: 0 3px;
+    padding: 0 5px;
+    font-weight: 500;
+    color: #ff5816;
+    background: url("images/grey-bg.png") no-repeat center;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.footer_logo .copy {
+    margin-top: 10px;
+    align-self: end;
+    font-size: 13px;
+    text-transform: none;
+    opacity: .7;
+}
+
+.footer_logo .copy .slogan {
+    display: none;
+}
+
+.footer_contacts {
+    grid-area: contacts;
+    padding-right: 15px;
+    text-align: end;
+}
+
+.footer_contacts .numbers {
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.footer_contacts .main-num {
+    font-size: 16px;
+}
+
+.footer_contacts .schedule {
+    display: none;
+}
+
+.footer_contacts .back-call {
+    display: none;
+}
+
+.footer_contacts .mail-info {
+    text-decoration: underline #5c7489;
+}
+
+.footer-copyright-networks {
+    display: grid;
+    grid-template-columns: 180px 100px;
+    justify-content: space-between;
+    padding: 0 15px;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.footer-copyright-networks .network-icons {
+    align-self: end;
+    justify-self: end;
+}
+
+.footer-copyright-networks .network-icons li {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+
+.footer-copyright-networks .network-icons li img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.footer-note-widget {
+    padding: 20px 15px;
+    display: grid;
+    grid-template-columns: auto;
+    justify-items: center;
+    color: #ffffff;
+    font-size: 10px;
+    background-color: #2c3f53;
+}
+
+.footer-note-widget .note {
+    display: none;
+}
+
 .news-ad-block,
 .brand-block,
 .right-now-block,
@@ -341,8 +495,6 @@ a {
         margin-right: 20px;
     }
 
-
-
     .header__basket {
         width: 100%;
         height: 50px;
@@ -362,7 +514,6 @@ a {
     .basket-goods-counter {
         display: none;
     }
-
 
     .basket__info {
         display: inline-block;
@@ -932,9 +1083,100 @@ a {
         font-size: 11px;
     }
 
+    .footer {
+        padding-top: 40px;
+    }
+
+    .footer-content {
+        grid-template-columns: 25% 22% 18% 25%;
+        grid-template-areas:
+                "logo address menu contacts";
+    }
+
+    .footer_logo .copy .slogan {
+        display: block;
+    }
+
+    .footer_menu {
+        margin-bottom: 0;
+    }
+
+    .footer_menu li::after {
+        display: none;
+    }
+
+    .footer_menu li {
+        text-decoration: #ffffff underline;
+        border-bottom: none;
+        margin-bottom: 15px;
+        padding: 0;
+    }
+
+    .footer_address {
+        display: block;
+        grid-area: address;
+        font-size: 13px;
+        font-weight: 300;
+        opacity: .7;
+    }
+
+    .footer_address a {
+        text-decoration: underline #c8d4dc;
+    }
+
+    .footer_contacts .main-num {
+        font-size: 20px;
+    }
+
+    .footer_contacts .schedule {
+        display: block;
+    }
+
+    .footer_contacts .mail-info {
+        display: none;
+    }
+
+    .footer-note-widget  {
+        grid-template-columns: auto auto;
+        grid-column-gap: 10%;
+    }
+
+    .footer-note-widget .note {
+        display: block;
+        line-height: 15px;
+    }
 }
 
 @media screen and (min-width: 980px) {
+
+    .back-call {
+        padding-top: 15px;
+        padding-right: 10px;
+        top: 5px;
+        left: -130px;
+        width: 112px;
+        height: 57px;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 13px;
+        font-weight: 400;
+        background: url("images/back-call-bg.png") no-repeat center;
+    }
+
+    .back-call a {
+        text-decoration: dotted;
+        color: #4673ab;
+    }
+
+    .back-call a:hover {
+        color: #5c7489;
+    }
+
+    .header__contacts .back-call {
+        display: block;
+        position: absolute;
+    }
+
     .header__contacts {
         position: relative;
         text-align: left;
@@ -947,18 +1189,6 @@ a {
 
     .header__contacts .back-call {
         padding-top: 10px;
-        padding-right: 10px;
-        display: block;
-        position: absolute;
-        top: 5px;
-        left: -130px;
-        width: 112px;
-        height: 57px;
-        text-align: center;
-        text-transform: uppercase;
-        font-size: 13px;
-        font-weight: 400;
-        background: url("images/back-call-bg.png") no-repeat center;
     }
 
     .header__contacts .back-call a {
@@ -1042,14 +1272,31 @@ a {
     .banner_info .benefits li {
         font-size: 13px;
     }
+
+    .footer {
+        padding-bottom: 35px;
+    }
+
+    .footer-content {
+        margin-bottom: 25px;
+    }
+
+    .footer_logo .copy {
+        margin-top: 30px;
+    }
+
+    .footer-copyright-networks {
+        grid-template-columns: 265px 100px;
+    }
+
+    .footer-note-widget  {
+        grid-column-gap: 25%;
+    }
 }
 
 @media screen and (min-width: 1140px) {
 
     .header_main__info {
-        /*
-        justify-content: space-between;
-        */
         grid-template-columns: 1fr 1fr 1fr 200px;
         grid-template-areas:
                 "logo contacts search basket";
@@ -1160,5 +1407,24 @@ a {
 
     .banner_info__title em {
         font-size: 18px;
+    }
+
+    .footer_contacts .back-call {
+        display: block;
+        position: absolute;
+    }
+
+    .footer_contacts {
+        position: relative;
+        text-align: start;
+        justify-self: end;
+    }
+
+    .footer_contacts .skype-info {
+        display: none;
+    }
+
+    .footer_contacts .mail-info {
+        display: block;
     }
 }
