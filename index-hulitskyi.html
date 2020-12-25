@@ -5,215 +5,636 @@
   <title>PM-HW-3</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="fonts.css">
   <link rel="stylesheet" href="style-hulitskyi.css">
 </head>
 <body>
 
-<div class="right-now-block">
-  <div class="right-now_header">
-    <div class="right-now__title">
-      Что покупают прямо сейчас
-    </div>
-  </div>
-  <div class="right-now_slider">
-    <div class="right-now_slider__product">
-      <a class="right-now_product__img" href="#">
-        <img src="images/samsung-shs-2320.png" alt="">
-      </a>
-      <a class="right-now-product__link" href="#">
-        Замок дверной Samsung SHS-2320 XMK/EN
-      </a>
-    </div>
-    <div class="right-now_slider__product">
-      <a class="right-now_product__img" href="#">
-        <img src="images/openvox-voxstack.png" alt="">
-      </a>
-      <a class="right-now-product__link" href="#">
-        GSM-VoIP шлюз OpenVox VoxStack VS-GW2120-4G
-      </a>
-    </div>
-    <div class="right-now_slider__product">
-      <a class="right-now_product__img" href="#">
-        <img src="images/grandstream-gxp2130.png" alt="">
-      </a>
-      <a class="right-now-product__link" href="#">
-        IP телефон Grandstream GXP2130
-      </a>
-    </div>
-    <div class="right-now_slider__product">
-      <a class="right-now_product__img" href="#">
-        <img src="images/bqd-2051.png" alt="">
-      </a>
-      <a class="right-now-product__link" href="#">
-        GSM телефон BQD–2051 Rome
-      </a>
-    </div>
-  </div>
-</div>
+<main>
+  <div class="container">
+    <div class="header_main">
+      <div class="region-auth-block">
+        <div class="region-selection">
+          <label for="region-select__city">Ваш регион:</label>
+          <select id="region-select__city">
+            <option value="moskva">Москва</option>
+            <option value="spb">Санкт-Петербург</option>
+            <option value="novosibirsk">Новосибирськ</option>
+            <option value="yekaterinburg">Екатеринбург</option>
+            <option value="kazan">Казань</option>
+          </select>
+        </div>
+        <div class="auth">
+          <a href="#" class="auth-link login">Войти</a>
+          <a href="#" class="auth-link">Личный кабинет</a>
+        </div>
+      </div>
+      <div class="header_main__info">
+        <div class="header__logo">
+          <p class="">
+            <a href="#" class="logo__name">
+              HO<span class="bg">MY</span>RU
+            </a>
+          </p>
+          <p class="logo__slogan">
+            Оборудование и решения для VoIP
+          </p>
+        </div>
+        <div class="header__search">
+          <a class="search-icon" href="#">
+            <img src="images/search-icon.svg" alt="search icon">
+          </a>
+          <div class="search-box">
+            <div class="search-box_title">
+              <span class="orange">VoIP решения</span>
+              <br>
+              для экономных людей
+            </div>
+            <form action="">
+              <label>
+                <input type="text" class="search-input" placeholder="Поиск по сайту">
+              </label>
+              <input type="button" class="search-button" value="искать">
+            </form>
+          </div>
+        </div>
+        <div class="header__basket">
+          <div class="basket">
+            <a href="#">
+              <img src="images/basket-icon.svg" alt="basket icon">
+              <span class="basket-goods-counter">
+              10
+            </span>
+              <p class="basket__info">
+                <strong>Корзина</strong>
+                <br>
+                4 / 4 000р.
+              </p>
+            </a>
+          </div>
+          <p class="basket-fav-match">
+            <a href="#"><img src="images/heart-icon.png" alt="избранное"> Избранное 7</a>
+            <a href="#"><img src="images/matching-icon.png" alt="сравнение"> Сравенние 2</a>
+          </p>
 
-<div class="brand-block">
-  <div class="brand-block_header">
-    <div class="brand-block__title">
-      Наши ключевые бренды
-      <a class="arrow-more-info" href="#">
-        <img src="images/blue-right-arrow.png" alt="">
-      </a>
-    </div>
-    <div class="block_arrows">
-      <a class="block_arrows__link" href="#">
-        Все бренды
-      </a>
-      <div class="arrow-btn">
-        <span class="arrow prev"></span>
-        <span class="arrow next"></span>
+        </div>
+        <div></div>
+        <div class="header__contacts">
+          <div class="numbers">
+            <p><strong>+7 495 2-55-44-66</strong></p>
+            <p class="schedule">(пн-пт с 9 до 18 ч)</p>
+            <p class="social">
+              <img src="images/viber-icon.png" alt="viber icon">
+              <img src="images/whatsapp-icon.png" alt="whatsapp icon">
+              +7 911 111-11-1
+            </p>
+          </div>
+          <div class="email-skype">
+            <p><a href="mailto:info@homy.ru">info@homy.ru</a></p>
+            <p class="skype-info">
+              <img src="images/skype-icon.png" alt="skype icon"> skype-on.06
+            </p>
+          </div>
+          <div class="back-call"><a href="#">Обратный звонок</a></div>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="brand-block_slider">
-    <div class="brand-block_slider__brand">
-      <a href="#">
-        <img src="images/brand-samsung.png" alt="">
-      </a>
-    </div>
-    <div class="brand-block_slider__brand">
-      <a href="#">
-        <img src="images/brand-panasonic.png" alt="">
-      </a>
-    </div>
-    <div class="brand-block_slider__brand">
-      <a href="#">
-        <img src="images/brand-siemens.png" alt="">
-      </a>
-    </div>
-    <div class="brand-block_slider__brand">
-      <a href="#">
-        <img src="images/brand-fanvil.png" alt="">
-      </a>
-    </div>
-    <div class="brand-block_slider__brand">
-      <a href="#">
-        <img src="images/brand-escene.png" alt="">
-      </a>
-    </div>
-    <div class="brand-block_slider__brand">
-      <a href="#">
-        <img src="images/brand-yealink.png" alt="">
-      </a>
-    </div>
-    <div class="brand-block_slider__brand">
-      <a href="#">
-        <img src="images/brand-openvax.png" alt="">
-      </a>
-    </div>
-    <div class="brand-block_slider__brand">
-      <a href="#">
-        <img src="images/brand-senao.png" alt="">
-      </a>
-    </div>
-    <div class="brand-block_slider__brand">
-      <a href="#">
-        <img src="images/brand-open-mesh.png" alt="">
-      </a>
-    </div>
-  </div>
-</div>
 
-<div class="our-strengths-block">
-  <div class="our-strengths_header">
-    <div class="our-strengths__title">
-      Наши сильные стороны
+    <div class="news-ad-block">
+      <div class="news-section">
+        <p class="news_header">
+          Новости компании
+        </p>
+        <ul class="news-list">
+          <li class="news-preview">
+            <a href="#">
+              <img class="news-img" src="images/news-icon-1.png" alt="news icon">
+              <div class="news-date">
+                <p class="date-num">29</p>
+                <p>октября</p>
+              </div>
+            </a>
+            <div class="news-text">
+              <a href="#" class="news-title">
+                Новинка от «Элтекс» - точка доступа WEP
+              </a>
+              <p class="news-article">
+                Предприятие «Элтекс» запустило производство точки доступа WEP-2ac.
+              </p>
+            </div>
+          </li>
+          <li class="news-preview">
+            <a href="#">
+              <img class="news-img" src="images/news-icon-2.png" alt="news icon">
+              <div class="news-date">
+                <p class="date-num">07</p>
+                <p>октября</p>
+              </div>
+            </a>
+            <div class="news-text">
+              <a href="#" class="news-title">
+                Новинка от компании Grandstream!
+              </a>
+              <p class="news-article">
+                Скоро в продаже мощный маршрутизатор GWN7000!
+              </p>
+            </div>
+          </li>
+          <li class="news-preview">
+            <a href="#">
+              <img class="news-img" src="images/news-icon-3.png" alt="news icon">
+              <div class="news-date">
+                <p class="date-num">28</p>
+                <p>сентября</p>
+              </div>
+            </a>
+            <div class="news-text">
+              <a href="#" class="news-title">
+                WiFi точка доступа от компании Grandstream!
+              </a>
+              <p class="news-article">
+                Уже скоро в продаже!
+              </p>
+            </div>
+          </li>
+        </ul>
+        <a class="all-news-link" href="#">Все новости</a>
+      </div>
+      <div class="advertising-section">
+        <p class="advertising__slogan">
+          <strong>Более 2000 товаров</strong> от 40+ производителей в одном магазине. <a href="#"><strong>Любые решения
+          под ключ.</strong></a>
+        </p>
+        <div class="banners-section">
+          <div class="banner">
+            <div class="banner_info">
+              <div class="banner_info__title">
+                <p class="slogan">Революционное решение</p>
+                <p class="text">на рынке среди систем ВКС!</p>
+                <p>
+                  <em>GVC 3200 от компании Grandstream это:</em>
+                </p>
+              </div>
+              <ul class="benefits">
+                <li>9-ти сторонняя аудио/видео конференция без покупки дополнительного ПО</li>
+                <li>2 Мпикс камера CMOS с разрешением 1920Hx1080V@15fps</li>
+                <li>Гигабитный порт, встроенный модуль WiFi (802.11n) и Bluetooth 4.0, Miracast</li>
+              </ul>
+              <a href="#" class="more-info-btn">Подробнее</a>
+            </div>
+          </div>
+          <span class="prev-arrow"></span>
+          <span class="next-arrow"></span>
+          <ul class="banner_dots">
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+      </div>
     </div>
-  </div>
-  <div class="our-strengths_main">
-    <div class="our-strengths_benefit">
-      <img class="our-strengths_benefit__img" src="images/chat-icon.png" alt="">
-      <span class="our-strengths_benefit__text">
+
+    <div class="right-now-block">
+      <div class="right-now_header">
+        <div class="right-now__title">
+          Что покупают прямо сейчас
+        </div>
+      </div>
+      <div class="right-now_slider">
+        <div class="right-now_slider__product">
+          <a class="right-now_product__img" href="#">
+            <img src="images/samsung-shs-2320.png" alt="">
+          </a>
+          <a class="right-now-product__link" href="#">
+            Замок дверной Samsung SHS-2320 XMK/EN
+          </a>
+        </div>
+        <div class="right-now_slider__product">
+          <a class="right-now_product__img" href="#">
+            <img src="images/openvox-voxstack.png" alt="">
+          </a>
+          <a class="right-now-product__link" href="#">
+            GSM-VoIP шлюз OpenVox VoxStack VS-GW2120-4G
+          </a>
+        </div>
+        <div class="right-now_slider__product">
+          <a class="right-now_product__img" href="#">
+            <img src="images/grandstream-gxp2130.png" alt="">
+          </a>
+          <a class="right-now-product__link" href="#">
+            IP телефон Grandstream GXP2130
+          </a>
+        </div>
+        <div class="right-now_slider__product">
+          <a class="right-now_product__img" href="#">
+            <img src="images/bqd-2051.png" alt="">
+          </a>
+          <a class="right-now-product__link" href="#">
+            GSM телефон BQD–2051 Rome
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="brand-block">
+      <div class="brand-block_header">
+        <div class="brand-block__title">
+          Наши ключевые бренды
+          <a class="arrow-more-info" href="#"></a>
+        </div>
+        <div class="block_arrows">
+          <a class="block_arrows__link" href="#">
+            Все бренды
+          </a>
+          <div class="arrow-btn">
+            <span class="arrow prev"></span>
+            <span class="arrow next"></span>
+          </div>
+        </div>
+      </div>
+      <div class="brand-block_slider">
+        <div class="brand-block_slider__brand">
+          <a href="#">
+            <img src="images/brand-samsung.png" alt="">
+          </a>
+        </div>
+        <div class="brand-block_slider__brand">
+          <a href="#">
+            <img src="images/brand-panasonic.png" alt="">
+          </a>
+        </div>
+        <div class="brand-block_slider__brand">
+          <a href="#">
+            <img src="images/brand-siemens.png" alt="">
+          </a>
+        </div>
+        <div class="brand-block_slider__brand">
+          <a href="#">
+            <img src="images/brand-fanvil.png" alt="">
+          </a>
+        </div>
+        <div class="brand-block_slider__brand">
+          <a href="#">
+            <img src="images/brand-escene.png" alt="">
+          </a>
+        </div>
+        <div class="brand-block_slider__brand">
+          <a href="#">
+            <img src="images/brand-yealink.png" alt="">
+          </a>
+        </div>
+        <div class="brand-block_slider__brand">
+          <a href="#">
+            <img src="images/brand-openvax.png" alt="">
+          </a>
+        </div>
+        <div class="brand-block_slider__brand">
+          <a href="#">
+            <img src="images/brand-senao.png" alt="">
+          </a>
+        </div>
+        <div class="brand-block_slider__brand">
+          <a href="#">
+            <img src="images/brand-open-mesh.png" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="our-strengths-block">
+      <div class="our-strengths_header">
+        <div class="our-strengths__title">
+          Наши сильные стороны
+        </div>
+      </div>
+      <ul class="our-strengths_main">
+        <li class="our-strengths_benefit">
+          <img class="our-strengths_benefit__img" src="images/chat-icon.png" alt="">
+          <span class="our-strengths_benefit__text">
         Грамотная консультация по каждому товару
       </span>
-    </div>
-    <div class="our-strengths_benefit">
-      <img class="our-strengths_benefit__img" src="images/wallet_icon.png" alt="">
-      <span class="our-strengths_benefit__text">
+        </li>
+        <li class="our-strengths_benefit">
+          <img class="our-strengths_benefit__img" src="images/wallet_icon.png" alt="">
+          <span class="our-strengths_benefit__text">
         Любые способы оплаты
       </span>
-    </div>
-    <div class="our-strengths_benefit">
-      <img class="our-strengths_benefit__img" src="images/instruments-icon.png" alt="">
-      <span class="our-strengths_benefit__text">
+        </li>
+        <li class="our-strengths_benefit">
+          <img class="our-strengths_benefit__img" src="images/instruments-icon.png" alt="">
+          <span class="our-strengths_benefit__text">
         Собственный сервисный центр
       </span>
-    </div>
-    <div class="our-strengths_benefit">
-      <img class="our-strengths_benefit__img" src="images/pickpoint-icon.png" alt="">
-      <span class="our-strengths_benefit__text">
+        </li>
+        <li class="our-strengths_benefit">
+          <img class="our-strengths_benefit__img" src="images/pickpoint-icon.png" alt="">
+          <span class="our-strengths_benefit__text">
         Разветвленная сеть самовывоза (Pickpoint)
       </span>
+        </li>
+      </ul>
     </div>
-  </div>
-</div>
 
-<div class="reasons-block">
-  <div class="reasons-block_header">
-    <div class="reasons-block__title">
-      5 причин выбрать нашу компанию
+    <div class="reasons-block">
+      <div class="reasons-block_header">
+        <div class="reasons-block__title">
+          5 причин выбрать нашу компанию
+        </div>
+      </div>
+      <div class="reasons-block_main">
+        <div class="reason reasons_red">
+          <div class="reasons_red__title">
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="23px" height="23px">
+              <image x="0px" y="0px" width="23px" height="23px"
+                     xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAXCAQAAABKIxwrAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfkDBQWNiNoWuE4AAAAiklEQVQ4y52UWwrEMAwDx7r/ndWPttumfgQ2EIjxSDgOThjABLtlAgT42jMMhvADxggDoBfkHUxocfUMn7VPgk+pSnW7hx+8EhRN0MtrFZQdi0+x+bJLezUlc6zRLT1cxt2cS9xzrCbZPJxauBRocC4EauFSoAEuBBrhJPh7mqbh/jH3NO1+gos5AHeWKyj9kjsgAAAAAElFTkSuQmCC"/>
+            </svg>
+            <p>С чем сталкиваются клиенты в 85% случаев, когда обращаются к нашим конкурентам?</p>
+          </div>
+          <ul class="reasons_red__list">
+            <li>
+              <strong>1.5 беглых менеджера</strong> по продажам со своим сайтом, имитирующие торговую компанию.
+            </li>
+            <li>
+              <strong>Торговля серым, несертифицированным товаром,</strong> что выливается в проблемы при гарантийном
+              обслуживании.
+            </li>
+            <li>
+              <strong>Менеджеры по продажам знакомы с оборудованием лишь на бумаге,</strong> часто не знают, что они
+              продают.
+            </li>
+            <li>
+              <strong>Компании занимаются только продажей,</strong> не проводят установку и настройку оборудования под
+              ключ.Не оказывают техподдержку.
+            </li>
+            <li>
+              <strong>Сложная процедура гарантийного ремонта</strong> и возврата товара в случае проблем. Не понятно,
+              куда
+              обращаться по гарантии.
+            </li>
+          </ul>
+        </div>
+        <div class="reason reasons_green">
+          <div class="reasons_green__title">
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="23px" height="20px">
+              <image x="0px" y="0px" width="23px" height="20px"
+                     xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAUCAQAAADblf5MAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfkDBQXASv3RKMJAAAAeElEQVQ4y53TSw4AIQgD0Jb735lZGD8MoqA7TV5QqFQ8LAUBeYKAAixXHaBadVZijS6wVtXATjMP/sFGNYEdBGQcag0Csmy0AtuFzziAvU0xDuEczh4f4DpXj4/QRsLiC/Tx940KoA8is3CXYebgPv7MwOjn8A6BD/sWHyMOpbN5AAAAAElFTkSuQmCC"/>
+            </svg>
+            <p>Какой сервис предложим Вам мы?</p>
+          </div>
+          <ul class="reasons_green__list">
+            <li>
+              <strong>1.5 беглых менеджера</strong> по продажам со своим сайтом, имитирующие торговую компанию.
+            </li>
+            <li>
+              <strong>Торговля серым, несертифицированным товаром,</strong> что выливается в проблемы при гарантийном
+              обслуживании.
+            </li>
+            <li>
+              <strong>Менеджеры по продажам знакомы с оборудованием лишь на бумаге,</strong> часто не знают, что они
+              продают.
+            </li>
+            <li>
+              <strong>Компании занимаются только продажей,</strong> не проводят установку и настройку оборудования под
+              ключ.Не оказывают техподдержку.
+            </li>
+            <li>
+              <strong>Сложная процедура гарантийного ремонта</strong> и возврата товара в случае проблем. Не понятно,
+              куда
+              обращаться по гарантии.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="statistics-block">
+      <div class="statistics-block_header">
+        <div class="statistics-block__title">
+          Мы в цифрах
+        </div>
+        <div class="block_arrows">
+          <div class="arrow-btn">
+            <span class="arrow prev"></span>
+            <span class="arrow next"></span>
+          </div>
+        </div>
+      </div>
+      <div class="statistics-block_main">
+        <div class="statistics-block_stat">
+      <span class="statistics-block__digits">
+        10
+      </span>
+          <span class="statistics-block__text">
+        10 лет на рынке
+      </span>
+        </div>
+        <div class="statistics-block_stat">
+      <span class="statistics-block__digits specialist">
+        25/5
+      </span>
+          <span class="statistics-block__text">
+        25 профильных специалистов, 5 менеджеров отдела продаж
+      </span>
+        </div>
+        <div class="statistics-block_stat">
+      <span class="statistics-block__digits products">
+        2222
+        <br>
+        <span>x</span>
+        <br>
+        100
+      </span>
+          <span class="statistics-block__text">
+        2222 товара в каталоге среди 100 брендов
+      </span>
+        </div>
+        <div class="statistics-block_stat">
+      <span class="statistics-block__digits">
+        29
+      </span>
+          <span class="statistics-block__text">
+        29 торговых партнеров
+      </span>
+        </div>
+        <div class="statistics-block_stat">
+      <span class="statistics-block__digits">
+        14
+      </span>
+          <span class="statistics-block__text">
+        14 отгрузок в сутки
+      </span>
+        </div>
+        <div class="statistics-block_stat">
+      <span class="statistics-block__digits">
+        1
+      </span>
+          <span class="statistics-block__text">
+        1 из лидеров рынка
+      </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="how-to-work-block">
+      <div class="how-to-work_header">
+        <div class="how-to-work__title">
+          Как с нами работать?
+        </div>
+      </div>
+      <ul class="how-to-work_variants">
+        <li class="variant active">В розницу</li>
+        <li class="variant"><span>Оптовикам</span></li>
+        <li class="variant"><span>Партнерам</span></li>
+        <li class="variant"><span>Покупая с настройкой</span></li>
+      </ul>
+      <div class="how-to-work_instructions">
+        <div class="how-to-work__item">
+          <img src="images/phone-icon.png" alt="">
+          <span class="text"><strong>1.</strong>Обращение через сайт/по телефону</span>
+        </div>
+        <div class="how-to-work__item">
+          <img src="images/submit-icon.png" alt="">
+          <span class="text"><strong>2.</strong>Подтверждение заказа</span>
+        </div>
+        <div class="how-to-work__item">
+          <img src="images/car-icon.png" alt="">
+          <span class="text"><strong>3.</strong>Доставка товара</span>
+        </div>
+        <div class="how-to-work__item">
+          <img src="images/wallet-icon.png" alt="">
+          <span class="text"><strong>4.</strong>Оплата товара при получении, либо предоплата по безналичному расчету до п. 3</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-us-block">
+      <div class="about-us_header"></div>
+      <div class="about-us_main">
+        <div class="about-us__text">
+          <p>
+            Интернет магазин Хомиру поможет вам в выборе оборудования для <a href="#" class="link">IP телефонии</a> -
+            которая активно используется как в бизнесе для общения с клиентами, партнёрами, поставщиками и инвесторами
+            по всему миру, так и в повседневной жизни, для разговоров с друзьями и близкими в других городах. Важными
+            преимуществом использования айпи телефона вместо обычного, является на порядок более низкая цена соединения.
+            Звонок в регион, расположенный за несколько тысяч километров от вас, может обойтись намного дешевле, чем
+            разговор по сотовому телефону в пределах города.
+          </p>
+          <p class="hidden">
+            Для <a href="#" class="link">подключения к услугам IP-телефонии</a> требуется только стабильный выход в
+            интернет и устройство коммуникации, например, компьютер с гарнитурой или ip телефон.
+          </p>
+        </div>
+        <div class="about-us__text">
+          <p>
+            Наш магазин айпи телефонии Homy предлагает <a href="#" class="link">полный спектр решений</a> для бизнеса и
+            частных лиц в сфере организации современной связи (в том числе Skype телефоны и SIP телефоны). IP телефоны
+            очень просты в использовании, так как применяется привычный всем, практически естественный интерфейс
+            обычного телефона. Для работы с ним не требуется каких-либо специальных навыков или дополнительных операций:
+            достаточно просто выполнить подключение и
+            <a href="#" class="link">конфигурирование устройства</a> и положить его на то место, где ранее лежал ваш
+            городской телефон. С этого момента вы и ваши сотрудники можете свободно пользоваться дешевой и защищённой
+            связью.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <ul class="footer_menu">
+        <li><a href="#">Доставка и оплата</a></li>
+        <li><a href="#">Гарантии и возврат</a></li>
+        <li><a href="#">Техподдержка</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+      <div class="footer_logo">
+        <p class="">
+          <a href="#" class="logo__name">
+            HO<span class="bg">MY</span>RU
+          </a>
+        </p>
+        <p class="logo__slogan">
+          Оборудование и решения для VoIP
+        </p>
+        <p class="copy">
+          © ХомиРу, 2006-2016
+          <span class="slogan">
+            Оборудование и решения для VoIP
+          </span>
+        <p>
+      </div>
+      <p class="footer_address">
+        г. Москва, Зеленоград,
+        <br>
+        Панфиловский пр., дом 8,
+        <br>
+        строение 1
+        <br>
+        <a href="#">Схема проезда</a>
+      </p>
+      <div class="footer_contacts">
+        <div class="numbers">
+          <p class="main-num"><strong>+7 495 2-55-44-66</strong></p>
+          <p class="schedule">(пн-пт с 9 до 18 ч)</p>
+          <p class="social">
+            <img src="images/viber-icon.png" alt="viber icon">
+            <img src="images/whatsapp-icon.png" alt="whatsapp icon">
+            +7 911 111-11-1
+          </p>
+          <p class="skype-info">
+            <img src="images/skype-icon.png" alt="skype icon"> skype-on.06
+          </p>
+          <p class="mail-info"><a href="mailto:info@homy.ru">info@homy.ru</a></p>
+        </div>
+        <div class="back-call"><a href="#">Обратный звонок</a></div>
+      </div>
+    </div>
+    <div class="footer-copyright-networks">
+      <p class="copyright">
+        Перепечатка материалов
+        возможна только с активной
+        ссылкой на homy.ru
+      </p>
+      <ul class="network-icons">
+        <li>
+          <a href="#">
+            <img src="images/vk-icon.png" alt="vk">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="images/fb-icon.png" alt="facebook">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="images/twitter-icon.png" alt="twitter">
+          </a>
+        </li>
+      </ul>
     </div>
   </div>
-  <div class="reasons-block_main">
-    <div class="reason reasons_red">
-      <div class="reasons_red__title">
-        <svg
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-            width="23px" height="23px">
-          <image  x="0px" y="0px" width="23px" height="23px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAXCAQAAABKIxwrAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfkDBQWNiNoWuE4AAAAiklEQVQ4y52UWwrEMAwDx7r/ndWPttumfgQ2EIjxSDgOThjABLtlAgT42jMMhvADxggDoBfkHUxocfUMn7VPgk+pSnW7hx+8EhRN0MtrFZQdi0+x+bJLezUlc6zRLT1cxt2cS9xzrCbZPJxauBRocC4EauFSoAEuBBrhJPh7mqbh/jH3NO1+gos5AHeWKyj9kjsgAAAAAElFTkSuQmCC" />
-        </svg>
-        <p>С чем сталкиваются клиенты в 85% случаев, когда обращаются к нашим конкурентам?</p>
-      </div>
-      <ul class="reasons_red__list">
-        <li>
-          <strong>1.5 беглых менеджера</strong> по продажам со своим сайтом, имитирующие торговую компанию.
-        </li>
-        <li>
-          <strong>Торговля серым, несертифицированным товаром,</strong> что выливается в проблемы при гарантийном обслуживании.
-        </li>
-        <li>
-          <strong>Менеджеры по продажам знакомы с оборудованием лишь на бумаге,</strong> часто не знают, что они продают.
-        </li>
-        <li>
-          <strong>Компании занимаются только продажей,</strong> не проводят установку и настройку оборудования под ключ.Не оказывают техподдержку.
-        </li>
-        <li>
-          <strong>Сложная процедура гарантийного ремонта</strong> и возврата товара в случае проблем. Не понятно, куда обращаться по гарантии.
-        </li>
-      </ul>
-    </div>
-    <div class="reason reasons_green">
-      <div class="reasons_green__title">
-        <svg
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-            width="23px" height="20px">
-          <image  x="0px" y="0px" width="23px" height="20px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAUCAQAAADblf5MAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfkDBQXASv3RKMJAAAAeElEQVQ4y53TSw4AIQgD0Jb735lZGD8MoqA7TV5QqFQ8LAUBeYKAAixXHaBadVZijS6wVtXATjMP/sFGNYEdBGQcag0Csmy0AtuFzziAvU0xDuEczh4f4DpXj4/QRsLiC/Tx940KoA8is3CXYebgPv7MwOjn8A6BD/sWHyMOpbN5AAAAAElFTkSuQmCC" />
-        </svg>
-        <p>Какой сервис предложим Вам мы?</p>
-      </div>
-      <ul class="reasons_green__list">
-        <li>
-          <strong>1.5 беглых менеджера</strong> по продажам со своим сайтом, имитирующие торговую компанию.
-        </li>
-        <li>
-          <strong>Торговля серым, несертифицированным товаром,</strong> что выливается в проблемы при гарантийном обслуживании.
-        </li>
-        <li>
-          <strong>Менеджеры по продажам знакомы с оборудованием лишь на бумаге,</strong> часто не знают, что они продают.
-        </li>
-        <li>
-          <strong>Компании занимаются только продажей,</strong> не проводят установку и настройку оборудования под ключ.Не оказывают техподдержку.
-        </li>
-        <li>
-          <strong>Сложная процедура гарантийного ремонта</strong> и возврата товара в случае проблем. Не понятно, куда обращаться по гарантии.
-        </li>
-      </ul>
+</footer>
+<div class="widget">
+  <div class="container">
+    <div class="footer-note-widget">
+      <p class="note">
+        Все описания и характеристики товаров носят информационный характер и могут отличаться от представленных
+        в технической документации производителей. Уточняйте информацию у наших менеджеров.
+      </p>
+      <img src="images/widget-icon.png" alt="Widget">
     </div>
   </div>
 </div>
