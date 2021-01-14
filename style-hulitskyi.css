@@ -41,16 +41,34 @@ body {
     background: url("images/orange-arrow-next.png") center center no-repeat;
 }
 
-.brand-block__title .arrow-more-info {
+.arrow-more-info {
     margin-left: 15px;
     padding-left: 10px;
     width: 9px;
     background: url("images/blue-right-arrow.png") no-repeat center center;
 }
 
-.brand-block__title .arrow-more-info:hover {
+.arrow-more-info:hover {
     background-image: url("images/orange-arrow.png");
 }
+
+.section-header {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-items: center;
+    background: url("images/1px_border.gif") center center repeat-x;
+    min-height: 1px;
+}
+
+.section-title {
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 500;
+    background-color: #fff;
+    padding-right: 20px;
+}
+
 
 .header_main {
     margin-top: 15px;
@@ -198,23 +216,6 @@ body {
 
 .how-to-work-block {
     margin-top: 30px;
-}
-
-.how-to-work_header {
-    margin: 0 10px;
-    display: grid;
-    grid-template-columns: auto;
-    justify-content: space-between;
-    align-items: center;
-    background: url("images/1px_border.gif") center center repeat-x;
-}
-
-.how-to-work__title {
-    text-transform: uppercase;
-    font-size: 22px;
-    font-weight: 500;
-    background-color: #fff;
-    padding-right: 10px;
 }
 
 .how-to-work_variants {
@@ -573,22 +574,6 @@ body {
         margin-top: 40px;
     }
 
-    .right-now_header {
-        display: grid;
-        grid-template-columns: auto;
-        justify-content: space-between;
-        align-items: center;
-        background: url("images/1px_border.gif") center center repeat-x;
-    }
-
-    .right-now__title {
-        text-transform: uppercase;
-        font-size: 22px;
-        font-weight: 500;
-        background-color: #fff;
-        padding-right: 20px;
-    }
-
     .right-now_slider {
         overflow: hidden;
         display: grid;
@@ -633,22 +618,6 @@ body {
         margin-top: 40px;
     }
 
-    .brand-block_header {
-        display: grid;
-        grid-template-columns: auto auto;
-        justify-content: space-between;
-        align-items: center;
-        background: url("images/1px_border.gif") center center repeat-x;
-    }
-
-    .brand-block__title {
-        text-transform: uppercase;
-        font-size: 22px;
-        font-weight: 500;
-        background-color: #fff;
-        padding-right: 20px;
-    }
-
     .brand-block_slider {
         overflow: hidden;
         margin-top: 20px;
@@ -674,20 +643,12 @@ body {
         border-radius: 10px;
     }
 
-    .our-strengths_header {
-        display: grid;
-        grid-template-columns: auto;
-        justify-content: space-between;
-        align-items: center;
+    .our-strengths-block .section-header {
         background: url("images/1px_border_w.gif") center center repeat-x;
     }
 
-    .our-strengths__title {
-        text-transform: uppercase;
-        font-size: 22px;
-        font-weight: 500;
+    .our-strengths-block .section-title {
         background-color: #e3e5eb;
-        padding-right: 20px;
     }
 
     .our-strengths_main {
@@ -726,22 +687,6 @@ body {
         display: block;
         padding: 0 15px;
         margin-top: 40px;
-    }
-
-    .reasons-block_header {
-        display: grid;
-        grid-template-columns: auto;
-        justify-content: space-between;
-        align-items: center;
-        background: url("images/1px_border.gif") center center repeat-x;
-    }
-
-    .reasons-block__title {
-        text-transform: uppercase;
-        font-size: 22px;
-        font-weight: 500;
-        background-color: #fff;
-        padding-right: 20px;
     }
 
     .reasons-block_main {
@@ -830,22 +775,6 @@ body {
         margin-top: 50px;
     }
 
-    .statistics-block_header {
-        display: grid;
-        grid-template-columns: auto auto;
-        justify-content: space-between;
-        align-items: center;
-        background: url("images/1px_border.gif") center center repeat-x;
-    }
-
-    .statistics-block__title {
-        text-transform: uppercase;
-        font-size: 22px;
-        font-weight: 500;
-        background-color: #fff;
-        padding-right: 20px;
-    }
-
     .statistics-block_main {
         overflow: hidden;
         display: grid;
@@ -919,11 +848,6 @@ body {
         padding: 0 15px;
         margin-top: 40px;
         margin-bottom: 65px;
-    }
-
-    .about-us_header {
-        min-height: 3px;
-        background: url("images/1px_border.gif") center center repeat-x;
     }
 
     .about-us_main {
