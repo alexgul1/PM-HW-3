@@ -35,11 +35,11 @@ body {
 
 .arrow.prev {
     margin-right: 8px;
-    background: url("images/orange-arrow-prev.png") center center no-repeat;
+    background: url("../images/orange-arrow-prev.png") center center no-repeat;
 }
 
 .arrow.next {
-    background: url("images/orange-arrow-next.png") center center no-repeat;
+    background: url("../images/orange-arrow-next.png") center center no-repeat;
 }
 
 
@@ -64,7 +64,7 @@ body {
     grid-template-columns: auto auto;
     justify-content: space-between;
     align-items: center;
-    background: url("images/1px_border.gif") center center repeat-x;
+    background: url("../images/1px_border.gif") center center repeat-x;
 
 }
 
@@ -93,7 +93,7 @@ body {
 
 .basket-btn {
     padding: 10px 16px 10px 40px;
-    background: #ff5816 url(images/ico_cart.svg) no-repeat 15% center;
+    background: #ff5816 url(../images/ico_cart.svg) no-repeat 15% center;
     background-size: 20px, 17px;
     border-bottom: #c44817 3px solid;
     text-transform: uppercase;
@@ -102,7 +102,7 @@ body {
 }
 
 .basket-btn:hover {
-    background: #4673ab url(images/ico_cart.svg) no-repeat 15% center;
+    background: #4673ab url(../images/ico_cart.svg) no-repeat 15% center;
     background-size: 20px, 17px;
 }
 
@@ -262,7 +262,7 @@ body {
     }
 
     .top-label:before {
-        background: #f7c159 url(images/ico_thumb.svg) no-repeat center center;
+        background: #f7c159 url(../images/ico_thumb.svg) no-repeat center center;
         background-size: 1.5em, 1.5em;
         color: #f7c159;
     }
@@ -366,7 +366,7 @@ body {
         grid-template-columns: auto;
         justify-content: space-between;
         align-items: center;
-        background: url("images/1px_border.gif") center center repeat-x;
+        background: url("../images/1px_border.gif") center center repeat-x;
     }
 
     .right-now__title {
@@ -426,7 +426,7 @@ body {
         grid-template-columns: auto auto;
         justify-content: space-between;
         align-items: center;
-        background: url("images/1px_border.gif") center center repeat-x;
+        background: url("../images/1px_border.gif") center center repeat-x;
     }
 
     .brand-block__title {
@@ -471,7 +471,7 @@ body {
         grid-template-columns: auto;
         justify-content: space-between;
         align-items: center;
-        background: url("images/1px_border_w.gif") center center repeat-x;
+        background: url("../images/1px_border_w.gif") center center repeat-x;
     }
 
     .our-strengths__title {
@@ -525,7 +525,7 @@ body {
         grid-template-columns: auto;
         justify-content: space-between;
         align-items: center;
-        background: url("images/1px_border.gif") center center repeat-x;
+        background: url("../images/1px_border.gif") center center repeat-x;
     }
 
     .reasons-block__title {
@@ -784,12 +784,12 @@ body {
 
     .slider .prev {
         left: 0;
-        background: url("images/arrow-left.png") center center no-repeat;
+        background: url("../images/arrow-left.png") center center no-repeat;
     }
 
     .slider .next {
         right: 0;
-        background: url("images/arrow-left.png") center center no-repeat;
+        background: url("../images/arrow-left.png") center center no-repeat;
         transform: rotate(180deg);
     }
 

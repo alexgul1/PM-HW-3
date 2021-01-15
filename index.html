@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <title>PM-HW-3</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="fonts.css">
-  <link rel="stylesheet" href="reset.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles/fonts.css">
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
 
@@ -16,48 +16,50 @@
       <div class="burger">
         <i class="burger-icon"></i>
       </div>
-      <div class="sub-menu">
-        <a class=" menu-item" href="#">Каталог</a>
-        <div class="sub-menu_items">
-          <a class=" sub-menu_item" href="#">VOIP оборудование</a>
-          <a class=" sub-menu_item" href="#">GSM оборудование</a>
-          <a class=" sub-menu_item" href="#">Телефония</a>
-          <a class=" sub-menu_item" href="#">Гарнитуры</a>
-          <a class=" sub-menu_item" href="#">Сетевое оборудование</a>
-          <a class=" sub-menu_item" href="#">Видеооборудование</a>
-          <a class=" sub-menu_item" href="#">Электронные замки</a>
-          <a class=" sub-menu_item" href="#">Домофоны</a>
-          <a class=" sub-menu_item" href="#">РАСПРОДАЖА</a>
+      <div class="menu-items">
+        <div class="sub-menu">
+          <a class=" menu-item" href="#">Каталог</a>
+          <div class="sub-menu_items">
+            <a class=" sub-menu_item" href="#">VOIP оборудование</a>
+            <a class=" sub-menu_item" href="#">GSM оборудование</a>
+            <a class=" sub-menu_item" href="#">Телефония</a>
+            <a class=" sub-menu_item" href="#">Гарнитуры</a>
+            <a class=" sub-menu_item" href="#">Сетевое оборудование</a>
+            <a class=" sub-menu_item" href="#">Видеооборудование</a>
+            <a class=" sub-menu_item" href="#">Электронные замки</a>
+            <a class=" sub-menu_item" href="#">Домофоны</a>
+            <a class=" sub-menu_item" href="#">РАСПРОДАЖА</a>
+          </div>
         </div>
-      </div>
-      <div class="sub-menu">
-        <a class=" menu-item" href="#">О компании</a>
-        <div class="sub-menu_items">
-          <a class=" sub-menu_item" href="#">VOIP оборудование</a>
-          <a class=" sub-menu_item" href="#">GSM оборудование</a>
-          <a class=" sub-menu_item" href="#">Телефония</a>
-          <a class=" sub-menu_item" href="#">Гарнитуры</a>
-          <a class=" sub-menu_item" href="#">Сетевое оборудование</a>
-          <a class=" sub-menu_item" href="#">Видеооборудование</a>
-          <a class=" sub-menu_item" href="#">Электронные замки</a>
-          <a class=" sub-menu_item" href="#">Домофоны</a>
-          <a class=" sub-menu_item" href="#">РАСПРОДАЖА</a>
+        <div class="sub-menu">
+          <a class=" menu-item" href="#">О компании</a>
+          <div class="sub-menu_items">
+            <a class=" sub-menu_item" href="#">VOIP оборудование</a>
+            <a class=" sub-menu_item" href="#">GSM оборудование</a>
+            <a class=" sub-menu_item" href="#">Телефония</a>
+            <a class=" sub-menu_item" href="#">Гарнитуры</a>
+            <a class=" sub-menu_item" href="#">Сетевое оборудование</a>
+            <a class=" sub-menu_item" href="#">Видеооборудование</a>
+            <a class=" sub-menu_item" href="#">Электронные замки</a>
+            <a class=" sub-menu_item" href="#">Домофоны</a>
+            <a class=" sub-menu_item" href="#">РАСПРОДАЖА</a>
+          </div>
         </div>
-      </div>
-      <a class="menu-item" href="#">Оплата и доставка</a>
-      <a class="menu-item" href="#">Гарантии и возврат</a>
-      <a class="menu-item" href="#">Сотрудничество</a>
-      <div class="sub-menu">
-        <a class=" menu-item" href="#">Услуги</a>
-        <div class="sub-menu_items">
-          <a class=" sub-menu_item" href="#">Услуги 1</a>
-          <a class=" sub-menu_item" href="#">Услуги 2</a>
-          <a class=" sub-menu_item" href="#">Услуги 3</a>
+        <a class="menu-item" href="#">Оплата и доставка</a>
+        <a class="menu-item" href="#">Гарантии и возврат</a>
+        <a class="menu-item" href="#">Сотрудничество</a>
+        <div class="sub-menu">
+          <a class=" menu-item" href="#">Услуги</a>
+          <div class="sub-menu_items">
+            <a class=" sub-menu_item" href="#">Услуги 1</a>
+            <a class=" sub-menu_item" href="#">Услуги 2</a>
+            <a class=" sub-menu_item" href="#">Услуги 3</a>
+          </div>
         </div>
+        <a class="menu-item" href="#">Решения</a>
+        <a class="menu-item" href="#">Техподдержка</a>
+        <a class="menu-item" href="#">Контакти</a>
       </div>
-      <a class="menu-item" href="#">Решения</a>
-      <a class="menu-item" href="#">Техподдержка</a>
-      <a class="menu-item" href="#">Контакти</a>
     </div>
   </nav>
 </header>
@@ -520,48 +522,229 @@
       </div>
       <div class="list-goods">
         <div class="one-offer">
-          <h4 class="one-good__name">Название акции</h4>
-          <div class="one-good__image-wrap">
+          <h4 class="one-offer__name">Название акции</h4>
+          <div class="one-offer__image-wrap">
             <img src="images/offer1.png" alt="">
           </div>
-          <div class="one-good__price-wrap">
-            <p class="one-good__price">Важными преимуществом использования айпи телефона вместо обычного, является на
+          <div class="one-offer__text-wrap">
+            <p class="one-offer__text">Важными преимуществом использования айпи телефона вместо обычного, является на
               порядок более низкая цена соединения. </p>
           </div>
-          <p class="one-good__about">Подробнее</p>
+          <div class="one-offer-time">
+            <span class="one-offer__text">
+            Срок действия
+            </span>
+            <div class="deadline">
+              <div class="deadline__time-measure">
+                <div class="deadline__numbers">
+                  <span class="deadline__number">1</span>
+                  <span class="deadline__number">0</span>
+                </div>
+                <p class="deadline__measure-title">
+                  дней
+                </p>
+              </div>
+              <div class="deadline__time-measure">
+                <div class="deadline__numbers">
+                  <span class="deadline__number">0</span>
+                  <span class="deadline__number">7</span>
+                </div>
+                <p class="deadline__measure-title">
+                  часов
+                </p>
+              </div>
+              <div class="deadline__time-measure">
+                <div class="deadline__numbers">
+                  <span class="deadline__number">5</span>
+                  <span class="deadline__number">9</span>
+                </div>
+                <p class="deadline__measure-title">
+                  минут
+                </p>
+              </div>
+            </div>
+          </div>
+          <a class="one-offer__about">Подробнее</a>
         </div>
         <div class="one-offer">
-          <h4 class="one-good__name">Название акции</h4>
-          <div class="one-good__image-wrap">
+          <h4 class="one-offer__name">Название акции</h4>
+          <div class="one-offer__image-wrap">
             <img src="images/offer1.png" alt="">
           </div>
-          <div class="one-good__price-wrap">
-            <p class="one-good__price">Важными преимуществом использования айпи телефона вместо обычного, является на
+          <div class="one-offer__text-wrap">
+            <p class="one-offer__text">Важными преимуществом использования айпи телефона вместо обычного, является на
               порядок более низкая цена соединения. </p>
           </div>
-          <p class="one-good__about">Подробнее</p>
+          <div class="one-offer-time">
+            <span class="one-offer__text">
+            Срок действия
+            </span>
+            <div class="deadline">
+              <div class="deadline__time-measure">
+                <div class="deadline__numbers">
+                  <span class="deadline__number">1</span>
+                  <span class="deadline__number">0</span>
+                </div>
+                <p class="deadline__measure-title">
+                  дней
+                </p>
+              </div>
+              <div class="deadline__time-measure">
+                <div class="deadline__numbers">
+                  <span class="deadline__number">0</span>
+                  <span class="deadline__number">7</span>
+                </div>
+                <p class="deadline__measure-title">
+                  часов
+                </p>
+              </div>
+              <div class="deadline__time-measure">
+                <div class="deadline__numbers">
+                  <span class="deadline__number">5</span>
+                  <span class="deadline__number">9</span>
+                </div>
+                <p class="deadline__measure-title">
+                  минут
+                </p>
+              </div>
+            </div>
+          </div>
+          <a class="one-offer__about">Подробнее</a>
         </div>
         <div class="one-offer">
-          <h4 class="one-good__name">Название акции</h4>
-          <div class="one-good__image-wrap">
+          <h4 class="one-offer__name">Название акции</h4>
+          <div class="one-offer__image-wrap">
             <img src="images/offer1.png" alt="">
           </div>
-          <div class="one-good__price-wrap">
-            <p class="one-good__price">Важными преимуществом использования айпи телефона вместо обычного, является на
+          <div class="one-offer__text-wrap">
+            <p class="one-offer__text">Важными преимуществом использования айпи телефона вместо обычного, является на
               порядок более низкая цена соединения. </p>
           </div>
-          <p class="one-good__about">Подробнее</p>
+          <div class="one-offer-time">
+            <span class="one-offer__text">
+            Срок действия
+            </span>
+            <div class="deadline">
+              <div class="deadline__time-measure">
+                <div class="deadline__numbers">
+                  <span class="deadline__number">1</span>
+                  <span class="deadline__number">0</span>
+                </div>
+                <p class="deadline__measure-title">
+                  дней
+                </p>
+              </div>
+              <div class="deadline__time-measure">
+                <div class="deadline__numbers">
+                  <span class="deadline__number">0</span>
+                  <span class="deadline__number">7</span>
+                </div>
+                <p class="deadline__measure-title">
+                  часов
+                </p>
+              </div>
+              <div class="deadline__time-measure">
+                <div class="deadline__numbers">
+                  <span class="deadline__number">5</span>
+                  <span class="deadline__number">9</span>
+                </div>
+                <p class="deadline__measure-title">
+                  минут
+                </p>
+              </div>
+            </div>
+          </div>
+          <a class="one-offer__about">Подробнее</a>
         </div>
         <div class="one-offer">
-          <h4 class="one-good__name">Название акции</h4>
-          <div class="one-good__image-wrap">
+          <h4 class="one-offer__name">Название акции</h4>
+          <div class="one-offer__image-wrap">
             <img src="images/offer1.png" alt="">
           </div>
-          <div class="one-good__price-wrap">
-            <p class="one-good__price">Важными преимуществом использования айпи телефона вместо обычного, является на
+          <div class="one-offer__text-wrap">
+            <p class="one-offer__text">Важными преимуществом использования айпи телефона вместо обычного, является на
               порядок более низкая цена соединения. </p>
           </div>
-          <p class="one-good__about">Подробнее</p>
+          <div class="one-offer-time">
+            <span class="one-offer__text">
+            Срок действия
+            </span>
+            <div class="deadline">
+              <div class="deadline__time-measure">
+                <div class="deadline__numbers">
+                  <span class="deadline__number">1</span>
+                  <span class="deadline__number">0</span>
+                </div>
+                <p class="deadline__measure-title">
+                  дней
+                </p>
+              </div>
+              <div class="deadline__time-measure">
+                <div class="deadline__numbers">
+                  <span class="deadline__number">0</span>
+                  <span class="deadline__number">7</span>
+                </div>
+                <p class="deadline__measure-title">
+                  часов
+                </p>
+              </div>
+              <div class="deadline__time-measure">
+                <div class="deadline__numbers">
+                  <span class="deadline__number">5</span>
+                  <span class="deadline__number">9</span>
+                </div>
+                <p class="deadline__measure-title">
+                  минут
+                </p>
+              </div>
+            </div>
+          </div>
+          <a class="one-offer__about">Подробнее</a>
+        </div>
+        <div class="one-offer">
+          <h4 class="one-offer__name">Название акции</h4>
+          <div class="one-offer__image-wrap">
+            <img src="images/offer1.png" alt="">
+          </div>
+          <div class="one-offer__text-wrap">
+            <p class="one-offer__text">Важными преимуществом использования айпи телефона вместо обычного, является на
+              порядок более низкая цена соединения. </p>
+          </div>
+          <div class="one-offer-time">
+            <span class="one-offer__text">
+            Срок действия
+            </span>
+            <div class="deadline">
+              <div class="deadline__time-measure">
+                <div class="deadline__numbers">
+                  <span class="deadline__number">1</span>
+                  <span class="deadline__number">0</span>
+                </div>
+                <p class="deadline__measure-title">
+                  дней
+                </p>
+              </div>
+              <div class="deadline__time-measure">
+                <div class="deadline__numbers">
+                  <span class="deadline__number">0</span>
+                  <span class="deadline__number">7</span>
+                </div>
+                <p class="deadline__measure-title">
+                  часов
+                </p>
+              </div>
+              <div class="deadline__time-measure">
+                <div class="deadline__numbers">
+                  <span class="deadline__number">5</span>
+                  <span class="deadline__number">9</span>
+                </div>
+                <p class="deadline__measure-title">
+                  минут
+                </p>
+              </div>
+            </div>
+          </div>
+          <a class="one-offer__about">Подробнее</a>
         </div>
       </div>
       <i class="arrow prev"></i>

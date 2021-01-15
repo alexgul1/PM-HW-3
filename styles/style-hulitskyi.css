@@ -34,22 +34,22 @@ body {
 
 .arrow.prev {
     margin-right: 8px;
-    background: url("images/orange-arrow-prev.png") center center no-repeat;
+    background: url("../images/orange-arrow-prev.png") center center no-repeat;
 }
 
 .arrow.next {
-    background: url("images/orange-arrow-next.png") center center no-repeat;
+    background: url("../images/orange-arrow-next.png") center center no-repeat;
 }
 
 .arrow-more-info {
     margin-left: 15px;
     padding-left: 10px;
     width: 9px;
-    background: url("images/blue-right-arrow.png") no-repeat center center;
+    background: url("../images/blue-right-arrow.png") no-repeat center center;
 }
 
 .arrow-more-info:hover {
-    background-image: url("images/orange-arrow.png");
+    background-image: url("../images/orange-arrow.png");
 }
 
 .section-header {
@@ -57,7 +57,7 @@ body {
     grid-template-columns: auto auto;
     justify-content: space-between;
     align-items: center;
-    background: url("images/1px_border.gif") center center repeat-x;
+    background: url("../images/1px_border.gif") center center repeat-x;
     min-height: 1px;
 }
 
@@ -134,7 +134,7 @@ body {
     padding: 0 5px;
     font-weight: 500;
     color: #ff5816;
-    background: url("images/grey-bg.png") no-repeat center;
+    background: url("../images/grey-bg.png") no-repeat center;
     background-size: cover;
     border-radius: 10px;
 
@@ -172,7 +172,7 @@ body {
     font-size: 10px;
     font-weight: 300;
     text-align: center;
-    background: url("images/grey-bg.png") no-repeat center;
+    background: url("../images/grey-bg.png") no-repeat center;
     background-size: cover;
     border-radius: 10px;
 }
@@ -325,7 +325,7 @@ body {
 }
 
 .footer_menu li::after {
-    content: url("images/arrow.png");
+    content: url("../images/arrow.png");
     position: absolute;
     right: 15px;
     top: 15px
@@ -354,7 +354,7 @@ body {
     padding: 0 5px;
     font-weight: 500;
     color: #ff5816;
-    background: url("images/grey-bg.png") no-repeat center;
+    background: url("../images/grey-bg.png") no-repeat center;
     background-size: cover;
     border-radius: 10px;
 }
@@ -458,7 +458,7 @@ body {
 
 @media screen and (max-width: 749px) {
     .how-to-work__item:nth-child(odd):not(:last-child)::after {
-        content: url("images/gray-arrow.svg");
+        content: url("../images/gray-arrow.svg");
         position: absolute;
         top: 20px;
         right: -35px;
@@ -503,7 +503,7 @@ body {
     .header__basket {
         width: 100%;
         height: 50px;
-        background: url("images/grey-bg.png") no-repeat center;
+        background: url("../images/grey-bg.png") no-repeat center;
         background-size: cover;
         border-radius: 5px;
     }
@@ -644,7 +644,7 @@ body {
     }
 
     .our-strengths-block .section-header {
-        background: url("images/1px_border_w.gif") center center repeat-x;
+        background: url("../images/1px_border_w.gif") center center repeat-x;
     }
 
     .our-strengths-block .section-title {
@@ -837,7 +837,7 @@ body {
     }
 
     .how-to-work__item:not(:last-child)::after {
-        content: url("images/gray-arrow.svg");
+        content: url("../images/gray-arrow.svg");
         position: absolute;
         top: 20px;
         right: -40px;
@@ -986,7 +986,7 @@ body {
     }
 
     .banners-section .banner {
-        background: url("images/banner.png") no-repeat center;
+        background: url("../images/banner.png") no-repeat center;
         background-size: cover;
         height: 370px;
         color: #fff;
@@ -1059,12 +1059,12 @@ body {
     }
 
     .banners-section .prev-arrow {
-        background: url("images/arrow-prev-banner.png") no-repeat center;
+        background: url("../images/arrow-prev-banner.png") no-repeat center;
         left: 3%;
     }
 
     .banners-section .next-arrow {
-        background: url("images/arrow-next-banner.png") no-repeat center;
+        background: url("../images/arrow-next-banner.png") no-repeat center;
         right: 3%;
     }
 
@@ -1170,7 +1170,7 @@ body {
         text-transform: uppercase;
         font-size: 13px;
         font-weight: 400;
-        background: url("images/back-call-bg.png") no-repeat center;
+        background: url("../images/back-call-bg.png") no-repeat center;
     }
 
     .back-call a {
@@ -1332,7 +1332,7 @@ body {
         font-weight: 300;
         text-transform: uppercase;
         margin-bottom: 10px;
-        background: url("images/ruble-icon.png") no-repeat left center;
+        background: url("../images/ruble-icon.png") no-repeat left center;
         padding-left: 30px;
     }
 

@@ -37,22 +37,22 @@ body {
 
 .arrow.prev {
     margin-right: 8px;
-    background: url("images/orange-arrow-prev.png") center center no-repeat;
+    background: url("../images/orange-arrow-prev.png") center center no-repeat;
 }
 
 .arrow.next {
-    background: url("images/orange-arrow-next.png") center center no-repeat;
+    background: url("../images/orange-arrow-next.png") center center no-repeat;
 }
 
 .brand-block__title .arrow-more-info {
     margin-left: 15px;
     padding-left: 10px;
     width: 9px;
-    background: url("images/blue-right-arrow.png") no-repeat center center;
+    background: url("../images/blue-right-arrow.png") no-repeat center center;
 }
 
 .brand-block__title .arrow-more-info:hover {
-    background-image: url("images/orange-arrow.png");
+    background-image: url("../images/orange-arrow.png");
 }
 
 .section-header {
@@ -60,7 +60,7 @@ body {
     grid-template-columns: auto auto;
     justify-content: space-between;
     align-items: center;
-    background: url("images/1px_border.gif") center center repeat-x;
+    background: url("../images/1px_border.gif") center center repeat-x;
 
 }
 
@@ -89,7 +89,7 @@ body {
 
 .basket-btn {
     padding: 10px 16px 10px 40px;
-    background: #ff5816 url(images/ico_cart.svg) no-repeat 15% center;
+    background: #ff5816 url(../images/ico_cart.svg) no-repeat 15% center;
     background-size: 20px, 17px;
     border-bottom: #c44817 3px solid;
     text-transform: uppercase;
@@ -98,7 +98,7 @@ body {
 }
 
 .basket-btn:hover {
-    background: #4673ab url(images/ico_cart.svg) no-repeat 15% center;
+    background: #4673ab url(../images/ico_cart.svg) no-repeat 15% center;
     background-size: 20px, 17px;
 }
 
@@ -166,7 +166,7 @@ body {
     padding: 0 5px;
     font-weight: 500;
     color: var(--orange);
-    background: url("images/grey-bg.png") no-repeat center;
+    background: url("../images/grey-bg.png") no-repeat center;
     background-size: cover;
     border-radius: 10px;
 
@@ -204,7 +204,7 @@ body {
     font-size: 10px;
     font-weight: 300;
     text-align: center;
-    background: url("images/grey-bg.png") no-repeat center;
+    background: url("../images/grey-bg.png") no-repeat center;
     background-size: cover;
     border-radius: 10px;
 }
@@ -256,7 +256,7 @@ body {
     grid-template-columns: auto;
     justify-content: space-between;
     align-items: center;
-    background: url("images/1px_border.gif") center center repeat-x;
+    background: url("../images/1px_border.gif") center center repeat-x;
 }
 
 .how-to-work__title {
@@ -374,7 +374,7 @@ body {
 }
 
 .footer_menu li::after {
-    content: url("images/arrow.png");
+    content: url("../images/arrow.png");
     position: absolute;
     right: 15px;
     top: 15px
@@ -403,7 +403,7 @@ body {
     padding: 0 5px;
     font-weight: 500;
     color: var(--orange);
-    background: url("images/grey-bg.png") no-repeat center;
+    background: url("../images/grey-bg.png") no-repeat center;
     background-size: cover;
     border-radius: 10px;
 }
@@ -661,7 +661,7 @@ body {
     }
 
     .top-label:before {
-        background: #f7c159 url(images/ico_thumb.svg) no-repeat center center;
+        background: #f7c159 url(../images/ico_thumb.svg) no-repeat center center;
         background-size: 1.5em, 1.5em;
         color: #f7c159;
     }
@@ -675,11 +675,11 @@ body {
         cursor: pointer;
     }
 
-    .one-good__image-wrap img {
+    .one-good__image-wrap img, .one-offer__image-wrap img  {
         width: 100%;
     }
 
-    .one-good__name {
+    .one-good__name, .one-offer__name {
         font-size: 16px;
         font-weight: 400;
         line-height: 1.2;
@@ -688,17 +688,22 @@ body {
         padding: 35px 0 25px;
     }
 
-    .one-good__name:hover {
+    .one-good__name:hover, .one-offer__name:hover {
         color: var(--orange);
         text-decoration: underline var(--orange);
     }
 
-    .one-good__price-wrap {
+    .one-good__price-wrap, .one-offer__text-wrap {
         display: grid;
         grid-template-columns: auto 1fr;
     }
 
     .one-good__price {
+        font-weight: 300;
+        font-size: 13px;
+    }
+
+    .one-offer__text {
         font-weight: 300;
         font-size: 13px;
     }
@@ -721,7 +726,7 @@ body {
         padding: 20px 0 15px;
     }
 
-    .one-good__about {
+    .one-good__about, .one-offer__about {
         font-size: 13px;
         color: #4673ab;
         text-decoration: underline #4673ab;
@@ -733,22 +738,78 @@ body {
     }
 
     .one-offer h4 {
-        padding: 10px 0;
-        text-align: center;
+        padding: 15px 20px;
+
+        font-weight: bold;
     }
 
-    .one-offer p {
+    .one-offer .one-offer__text {
         padding: 10px;
+        line-height: 1.2;
     }
 
-    .one-offer .one-good__about {
+    .one-offer .one-offer-time {
+        background-color: #e3e5eb;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        padding:10px;
+        align-items: center;
+    }
+
+    .deadline {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .deadline .deadline__time-measure {
+        position: relative;
+    }
+    
+    .deadline .deadline__time-measure:not(:last-child):after, .deadline .deadline__time-measure:not(:last-child):before {
+        content:'';
+        position: absolute;
+        right: 3px;
+        width: 3px;
+        height: 3px;
+        background: #2d2d2d;
+    }
+    .deadline .deadline__time-measure:after {
+        top: 12px;
+    }
+
+    .deadline .deadline__time-measure:before {
+        top: 4px;
+    }
+
+    .deadline__number{
+        color:white;
+        padding: 0 2px;
+        border-radius: 2px;
+        font-size: 20px;
+        background: #2d2d2d;
+    }
+    .deadline__measure-title{
+        color: #838282;
+        font-size: 13px;
+        padding: 2px 0;
+    }
+
+    /*.one-offer .one-offer-time  .one-offer__text{*/
+    /*    padding: 10px;*/
+    /*}*/
+
+    .one-offer .one-offer__about {
+        display: inline-block;
         text-align: center;
+        padding: 15px 0;
+        width: 100%;
+        cursor: pointer;
     }
 }
 
 @media screen and (max-width: 749px) {
     .how-to-work__item:nth-child(odd):not(:last-child)::after {
-        content: url("images/gray-arrow.svg");
+        content: url("../images/gray-arrow.svg");
         position: absolute;
         top: 20px;
         right: -35px;
@@ -790,7 +851,7 @@ body {
     .header__basket {
         width: 100%;
         height: 50px;
-        background: url("images/grey-bg.png") no-repeat center;
+        background: url("../images/grey-bg.png") no-repeat center;
         background-size: cover;
         border-radius: 5px;
     }
@@ -873,7 +934,7 @@ body {
         grid-template-columns: auto;
         justify-content: space-between;
         align-items: center;
-        background: url("images/1px_border.gif") center center repeat-x;
+        background: url("../images/1px_border.gif") center center repeat-x;
     }
 
     .right-now__title {
@@ -933,7 +994,7 @@ body {
         grid-template-columns: auto auto;
         justify-content: space-between;
         align-items: center;
-        background: url("images/1px_border.gif") center center repeat-x;
+        background: url("../images/1px_border.gif") center center repeat-x;
     }
 
     .brand-block__title {
@@ -974,7 +1035,7 @@ body {
         grid-template-columns: auto;
         justify-content: space-between;
         align-items: center;
-        background: url("images/1px_border_w.gif") center center repeat-x;
+        background: url("../images/1px_border_w.gif") center center repeat-x;
     }
 
     .our-strengths__title {
@@ -1028,7 +1089,7 @@ body {
         grid-template-columns: auto;
         justify-content: space-between;
         align-items: center;
-        background: url("images/1px_border.gif") center center repeat-x;
+        background: url("../images/1px_border.gif") center center repeat-x;
     }
 
     .reasons-block__title {
@@ -1129,7 +1190,7 @@ body {
         grid-template-columns: auto auto;
         justify-content: space-between;
         align-items: center;
-        background: url("images/1px_border.gif") center center repeat-x;
+        background: url("../images/1px_border.gif") center center repeat-x;
     }
 
     .statistics-block__title {
@@ -1202,7 +1263,7 @@ body {
     }
 
     .how-to-work__item:not(:last-child)::after {
-        content: url("images/gray-arrow.svg");
+        content: url("../images/gray-arrow.svg");
         position: absolute;
         top: 20px;
         right: -40px;
@@ -1217,7 +1278,7 @@ body {
 
     .about-us_header {
         min-height: 3px;
-        background: url("images/1px_border.gif") center center repeat-x;
+        background: url("../images/1px_border.gif") center center repeat-x;
     }
 
     .about-us_main {
@@ -1356,7 +1417,7 @@ body {
     }
 
     .banners-section .banner {
-        background: url("images/banner.png") no-repeat center;
+        background: url("../images/banner.png") no-repeat center;
         background-size: 100% 100%;
         height: 370px;
         color: #fff;
@@ -1429,12 +1490,12 @@ body {
     }
 
     .banners-section .prev-arrow {
-        background: url("images/arrow-prev-banner.png") no-repeat center;
+        background: url("../images/arrow-prev-banner.png") no-repeat center;
         left: 3%;
     }
 
     .banners-section .next-arrow {
-        background: url("images/arrow-next-banner.png") no-repeat center;
+        background: url("../images/arrow-next-banner.png") no-repeat center;
         right: 3%;
     }
 
@@ -1540,7 +1601,7 @@ body {
         text-transform: uppercase;
         font-size: 13px;
         font-weight: 400;
-        background: url("images/back-call-bg.png") no-repeat center;
+        background: url("../images/back-call-bg.png") no-repeat center;
     }
 
     .back-call a {
@@ -1581,7 +1642,7 @@ body {
 
     .list-goods {
         grid-auto-columns: auto;
-        grid-template-columns: repeat(4, auto);
+        grid-template-columns: repeat(4, minmax(25%, 1fr));
     }
 
     .right-now_slider {
@@ -1689,9 +1750,9 @@ body {
         padding: 0;
     }
 
-    .menu .container {
+    .menu .container .menu-items {
         display: grid;
-        grid-template-columns: repeat(9, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     }
 
     .menu .menu-item {
@@ -1823,12 +1884,12 @@ body {
 
     .slider .prev {
         left: 0;
-        background: url("images/arrow-left.png") center center no-repeat;
+        background: url("../images/arrow-left.png") center center no-repeat;
     }
 
     .slider .next {
         right: 0;
-        background: url("images/arrow-left.png") center center no-repeat;
+        background: url("../images/arrow-left.png") center center no-repeat;
         transform: rotate(180deg);
     }
 
@@ -1858,7 +1919,7 @@ body {
         font-weight: 300;
         text-transform: uppercase;
         margin-bottom: 10px;
-        background: url("images/ruble-icon.png") no-repeat left center;
+        background: url("../images/ruble-icon.png") no-repeat left center;
         padding-left: 30px;
     }
 
