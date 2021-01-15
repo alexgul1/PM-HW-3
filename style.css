@@ -44,24 +44,13 @@ body {
     background: url("images/orange-arrow-next.png") center center no-repeat;
 }
 
-.brand-block__title .arrow-more-info {
-    margin-left: 15px;
-    padding-left: 10px;
-    width: 9px;
-    background: url("images/blue-right-arrow.png") no-repeat center center;
-}
-
-.brand-block__title .arrow-more-info:hover {
-    background-image: url("images/orange-arrow.png");
-}
-
 .section-header {
     display: grid;
     grid-template-columns: auto auto;
     justify-content: space-between;
     align-items: center;
     background: url("images/1px_border.gif") center center repeat-x;
-
+    min-height: 1px;
 }
 
 .section-title {
@@ -248,23 +237,6 @@ body {
 
 .how-to-work-block {
     margin-top: 30px;
-}
-
-.how-to-work_header {
-    margin: 0 10px;
-    display: grid;
-    grid-template-columns: auto;
-    justify-content: space-between;
-    align-items: center;
-    background: url("images/1px_border.gif") center center repeat-x;
-}
-
-.how-to-work__title {
-    text-transform: uppercase;
-    font-size: 22px;
-    font-weight: 500;
-    background-color: #fff;
-    padding-right: 10px;
 }
 
 .how-to-work_variants {
@@ -868,22 +840,6 @@ body {
         margin-top: 40px;
     }
 
-    .right-now_header {
-        display: grid;
-        grid-template-columns: auto;
-        justify-content: space-between;
-        align-items: center;
-        background: url("images/1px_border.gif") center center repeat-x;
-    }
-
-    .right-now__title {
-        text-transform: uppercase;
-        font-size: 22px;
-        font-weight: 500;
-        background-color: #fff;
-        padding-right: 20px;
-    }
-
     .right-now_slider {
         overflow: hidden;
         display: grid;
@@ -928,22 +884,6 @@ body {
         margin-top: 40px;
     }
 
-    .brand-block_header {
-        display: grid;
-        grid-template-columns: auto auto;
-        justify-content: space-between;
-        align-items: center;
-        background: url("images/1px_border.gif") center center repeat-x;
-    }
-
-    .brand-block__title {
-        text-transform: uppercase;
-        font-size: 22px;
-        font-weight: 500;
-        background-color: #fff;
-        padding-right: 20px;
-    }
-
     .brand-block_slider {
         overflow: hidden;
         margin-top: 20px;
@@ -969,20 +909,12 @@ body {
         border-radius: 10px;
     }
 
-    .our-strengths_header {
-        display: grid;
-        grid-template-columns: auto;
-        justify-content: space-between;
-        align-items: center;
+    .our-strengths-block .section-header {
         background: url("images/1px_border_w.gif") center center repeat-x;
     }
 
-    .our-strengths__title {
-        text-transform: uppercase;
-        font-size: 22px;
-        font-weight: 500;
+    .our-strengths-block .section-title {
         background-color: #e3e5eb;
-        padding-right: 20px;
     }
 
     .our-strengths_main {
@@ -1023,28 +955,13 @@ body {
         margin-top: 40px;
     }
 
-    .reasons-block_header {
-        display: grid;
-        grid-template-columns: auto;
-        justify-content: space-between;
-        align-items: center;
-        background: url("images/1px_border.gif") center center repeat-x;
-    }
-
-    .reasons-block__title {
-        text-transform: uppercase;
-        font-size: 22px;
-        font-weight: 500;
-        background-color: #fff;
-        padding-right: 20px;
-    }
-
     .reasons-block_main {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-auto-flow: column;
         grid-column-gap: 30px;
         justify-content: space-between;
+        align-items: start;
         margin-top: 30px;
     }
 
@@ -1114,7 +1031,6 @@ body {
     }
 
     .reasons_green__list li::marker {
-
         color: #16a333;
     }
 
@@ -1122,22 +1038,6 @@ body {
         display: block;
         padding: 0 15px;
         margin-top: 50px;
-    }
-
-    .statistics-block_header {
-        display: grid;
-        grid-template-columns: auto auto;
-        justify-content: space-between;
-        align-items: center;
-        background: url("images/1px_border.gif") center center repeat-x;
-    }
-
-    .statistics-block__title {
-        text-transform: uppercase;
-        font-size: 22px;
-        font-weight: 500;
-        background-color: #fff;
-        padding-right: 20px;
     }
 
     .statistics-block_main {
@@ -1215,11 +1115,6 @@ body {
         margin-bottom: 65px;
     }
 
-    .about-us_header {
-        min-height: 3px;
-        background: url("images/1px_border.gif") center center repeat-x;
-    }
-
     .about-us_main {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -1264,6 +1159,13 @@ body {
 
     }
 
+    .news-list {
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        grid-auto-rows: 0;
+        overflow: hidden;
+    }
+
     .news-section .all-news-link {
         color: #4673ab;
         text-decoration: underline #4673ab;
@@ -1282,11 +1184,6 @@ body {
         padding-bottom: 20px;
         border-bottom: 1px dotted #e3e5eb;
         margin-bottom: 20px;
-    }
-
-
-    .news-section .news-preview:not(nth-first-child) {
-        margin-top: 20px;
     }
 
     .news-preview a {
@@ -1357,7 +1254,7 @@ body {
 
     .banners-section .banner {
         background: url("images/banner.png") no-repeat center;
-        background-size: 100% 100%;
+        background-size: cover;
         height: 370px;
         color: #fff;
         border-radius: 5px;
